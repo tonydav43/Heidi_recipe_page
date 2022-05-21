@@ -23,7 +23,7 @@
     <h4>Please edit the form to update your recipe.</h4>
 </div>
 <div class="container-fluid div-create">
-    <form class="form-create" enctype='multipart/form-data' method="POST">
+    <form class="form-recipe-create" enctype='multipart/form-data' method="POST">
         {% csrf_token %}
         {{ form.as_p }}
     <div class="d-grid gap-2">
