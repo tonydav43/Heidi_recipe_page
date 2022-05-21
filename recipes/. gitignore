@@ -1,22 +1,22 @@
+#ignore ALL .log files
 *.log
 *.pot
 *.pyc
-__pycache__/
+*.env
+*.bak
+*db.sqlite3
 local_settings.py
-media/
-
-# Database stuff
-*.sqlite3
-migrations/
-db.sqlite3
-
-.env
-Scripts
-Include
 Tutorial.txt
 
-# Text backup files
-.bak
+# ignore ALL files in ANY directory named temp
+temp/
+media/
+migrations/
+__pycache__/
+Scripts/
+Include/
 
-# Database
-db.sqlite3
+
+
+
+
