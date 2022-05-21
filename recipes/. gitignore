@@ -6,4 +6,4 @@ Tutorial.txt
 .bak
 
 # Database
-.sqlite3
+db.sqlite3
