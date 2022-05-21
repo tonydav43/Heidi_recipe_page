@@ -1,0 +1,21 @@
+.div-body {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.home-display {
+    color: #51361a;
+    font-weight:500;
+}
+
+.home-lead {
+    color: #51361a;
+    font-weight: bold;
+}
+
+.jumbotron {
+    text-align: center;
+    padding-top: 75px;
+    background-color: grey;
+  }

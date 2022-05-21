@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/detail.css' %}">
+{% endblock css %}
+
+{% block extra_css %}
+<style>
+    body {
+        background: url(../../../static/images/recipe_detail_background.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+ </style>
+{% endblock extra_css %} 
+
+{% block content %}
+<div class="container div-detail">
+    <div class="card card-detail scrollable-menu" id="card-width">
+        <div class="card-body">
+            <h2 class="card-title">Recipe for {{ recipe.recipe_name }} </h2>
+            {% if not recipe.author.username %}
+                <h6>Created on {{ recipe.recipe_timestamp }} author now deleted</h6>
+            {% else %}
+                <h6>Created by - {{ recipe.author.first_name }} {{ recipe.author.last_name }} on {{ recipe.recipe_timestamp }} </h6>
+            {% endif %}
+        </div>
+            <img src=" {{ recipe.recipe_image.url }}" class="card-img-top rounded-top" alt="{{ recipe.recipe_image }}">
+        <ul class="list-group list-group-flush">
+            <h5 class="card-title">Recipe Ingredients:</h5>
+            <li class="list-group-item"> {{ recipe.recipe_ingredients|linebreaks }} </li>
+            <h5 class="card-title">Recipe Instructions:</h5>
+            <li class="list-group-item"> {{ recipe.recipe_instructions|linebreaks }} </li>
+            <h5 class="card-title">Recipe Notes:</h5>
+            <li class="list-group-item"> {{ recipe.recipe_notes|linebreaks }} </li>
+            {% if request.user == recipe.author %}
+                <button type="button" class="btn btn-success my-1"><a  id="btn-update"  href="{% url 'recipes_app:update' recipe.slug %}"{{recipe.recipe.slug}} class="h6-btn">Update Recipe</a></button>
+                <button type="button" class="btn btn-danger my-1"><a  id="btn-delete"  href="{% url 'recipes_app:delete' recipe.slug %}" class="h6-btn">Delete Recipe</a></button>
+            {% endif %}
+        </ul>
+    </div>   
+</div>
+{% endblock content %}

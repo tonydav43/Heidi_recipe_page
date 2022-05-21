@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/register.css' %}">
+{% endblock css %}
+
+{% block extra_css %}
+<style>
+    body {
+        background: url(../../../static/images/registration.png) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+ </style>
+{% endblock extra_css %} 
+
+{% block content %}
+<div class="container register-h4">
+    <h4>Please complete the form to register.</h4>
+</div>
+<div class="container-fluid div-register">
+    <form class="form-create" method="POST">
+        {% csrf_token %}
+        {% for field in registration_form %}
+            <p>
+                <small>{{ field.label_tag }}</small>
+                {{ field }}
+
+                {% if field.help_text %}
+                    <small>{{ field.help_text }}</small>
+                {% endif %}
+
+                {% for error in field.errors  %}
+                    <h4 class="register-error">{{ error }}</h4>
+                {% endfor %}
+            </p>
+        {% endfor %}
+        <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-success">Register</button>
+            <button onclick="location.href='{% url 'home' %}'" class="btn btn-warning" type="button">Cancel</button> 
+        </div> 
+    </form>
+</div>
+{% endblock content %}

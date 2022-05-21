@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+{% endblock css %}
+
+{% block content %}
+<!--Bootstrap 5 jumbotron-->
+<div class="jumbotron">
+  <h1 class="display-4 home-display">The Best Recipe Page</h1>
+  <h4 class="lead home-lead">Forget the rest, cook the best</h4>
+  <h4 class="lead home-lead">with one of our recipes</h4>
+  <hr class="my-4">
+</div>
+{% endblock content %}
+
+{% block body %}
+<div class="container div-body">
+  <div class="row align-items-center">
+    <div class="col">
+      <img class="img-fluid img-thumbnail" src="{% static 'images/pancake_pouring.jpg' %}" alt="pancake">
+    </div>
+    <div class="col">
+      <img class="img-fluid img-thumbnail" src="{% static 'images/burger.jpg' %}" alt="burger">
+    </div>
+    <div class="col">
+      <img class="img-fluid img-thumbnail" src="{% static 'images/curry.jpg' %}" alt="curry">
+    </div>
+  </div>
+</div>
+{% endblock body %}

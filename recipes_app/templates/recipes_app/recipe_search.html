@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/search.css' %}">
+{% endblock css %}
+
+{% block extra_css %}
+<style>
+    body {
+        background: url(../../../static/images/search_background.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+ </style>
+{% endblock extra_css %} 
+
+{% block content %}
+    {% if searched %}
+        <div class="container h4-search">
+            <h5>You searched for a recipe containing the word <strong>{{ searched }}</strong>, this returned <strong>{{page_obj.paginator.count}}</strong> results.</h5>
+        </div> 
+        {% if page_obj.paginator.count %}
+        <div class="container div-search">   
+             <form class="form-search" >
+                {% for recipe in recipes %}
+                <ul class="ul-search">
+                    <li>{{ recipe.recipe_name }} - To view this recipe, click <a href="{% url 'recipes_app:detail' recipe.slug %}">here</a></li>
+                </ul>
+                    <hr/>  
+                {% endfor %} 
+            </form> 
+        </div>
+        {% endif %}
+    {% endif %} 
+    
+<!--Pagination-->
+<div class="pagination div-paginate">
+    <span class="step-links">
+        {% if page_obj.has_previous %}
+            <a href="?page=1">&laquo; first</a>
+            <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+        </span>
+
+        {% if page_obj.has_next %}
+            <a href="?page={{ page_obj.next_page_number }}">next</a>
+            <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+        {% endif %}
+    </span>
+</div>
+
+{% endblock content %}
+
+

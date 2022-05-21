@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/construction.css' %}">
+{% endblock css %}
+
+{% block content %}
+<!--Bootstrap 5 jumbotron-->
+<div class="jumbotron">
+  <h1 class="display-4 home-display">Sorry</h1>
+  <h4 class="lead home-lead">This page is under construction</h4>
+  <h4 class="lead home-lead">Please come back another time</h4>
+  <hr class="my-4">
+</div>
+{% endblock content %}
+
+{% block body %}
+    <div class="container div-body">
+        <img class="img-fluid img-thumbnail" src="{% static 'images/under_construction.jpg' %}" alt="under_construction"> 
+    </div>
+{% endblock body %}

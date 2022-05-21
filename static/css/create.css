@@ -1,0 +1,31 @@
+.create-h4 {
+    margin-top: 75px;;
+    width: fit-content;
+    text-align: center;
+    background-color:lightgray;
+    border: 1px solid #270644;
+}
+
+.div-create {
+    padding-top: 25px;
+    padding-bottom: 100px;
+}
+
+.form-recipe-create {
+    background-color:slategrey;
+    width: fit-content;
+    border: 1px solid #270644;
+    opacity: 85%;
+    margin: auto; 
+    padding: 10px;
+    }
+
+label {
+    float: left;
+    font-weight: bold;
+    }
+
+span {
+    font-style: italic;
+    font-weight: 600;
+}

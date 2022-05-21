@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% load bootstrap_icons %}
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+{% endblock css %}
+
+{% block extra_css %}
+<style>
+    body {
+        background: url(../../../static/images/login_background.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+ </style>
+{% endblock extra_css %} 
+
+{% block content %}
+<div class="container h3-login">
+    <h3>Please login to continue.</h3>
+</div>
+
+<div class="container fa-10x fa-login ">
+    <i class="fa-solid fa-users"></i>
+</div>
+
+{% if not request.user.is_authenticated %}
+    <div class="container div-login">
+        <form method="POST">
+            {% csrf_token %}
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="email"><i class="fa-solid fa-at"></i></span>
+                <input type="text" name="email" class="form-control" placeholder="Email Address" aria-label="Email" aria-describedby="email">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="password"><i class="fa-solid fa-lock"></i></span>
+                <input type="password" name="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="password">
+            </div>
+            <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-success btn-block">Login</button>
+            <a id="login-anchor" href="/accounts/password_reset/">Forgot password</a>
+            </div>
+        </form>
+    </div>
+
+{% endif %}
+
+{% if error %}
+<div class="container div-error alert alert-danger d-flex align-items-center" role="alert">
+    <svg class="bi flex-shrink-0 me-2" width="50" height="50" role="img" aria-label="Danger:">{% bs_icon 'exclamation-triangle-fill' size='3.0em' %}</svg>
+    <div class="div-error">
+        {{ error }}
+    </div>
+  </div>  
+{% endif %}    
+{% endblock content %}

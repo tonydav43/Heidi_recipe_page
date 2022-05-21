@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/food_group_list.css' %}">
+{% endblock css %}
+
+{% block extra_css %}
+<style>
+    body {
+        background: url(../../../static/images/sliced_beef.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: 100% auto;
+    }
+ </style>
+{% endblock extra_css %} 
+
+{% block content %}
+<div class="container food-group-h4">
+    <h4>This a list of all the beef recipes on this site, there are {{page_obj.paginator.count}} in total.</h4>
+</div>
+
+<div class="container div-list">
+    <form class="form-food-group">
+        {% for recipe in beef_recipe_list %}
+        {% if recipe.recipe_food_group == "Beef" %}
+        <h6>Recipe for <strong>{{ recipe.recipe_name }}</strong> which is the food group <strong>{{ recipe.recipe_food_group }}</strong>, click <a href="{% url 'recipes_app:detail' recipe.slug %}"><em>here </em></a>to view this recipe.</h6>
+        <hr/>
+        {% endif %}
+        {% endfor %} 
+    </form>      
+</div>
+
+<!--Pagination-->
+
+<div class="pagination div-paginate">
+    <span class="step-links">
+        {% if page_obj.has_previous %}
+            <a href="?page=1">&laquo; first</a>
+            <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+        </span>
+
+        {% if page_obj.has_next %}
+            <a href="?page={{ page_obj.next_page_number }}">next</a>
+            <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+        {% endif %}
+    </span>
+</div>
+{% endblock content %}

@@ -1,0 +1,32 @@
+.div-detail {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    width: fit-content;
+    background-color: lightgray ;
+}
+
+#card-width {
+    width: 500px;
+}
+
+.scrollable-menu {
+    height: auto;
+    max-height: 1000px;
+    overflow-y:scroll;
+}
+
+.list-group-item {
+    text-align: left;
+}
+
+#btn-update{ 
+    color: black; 
+    font-weight: bold;
+}
+
+#btn-delete{ 
+    color: black; 
+    font-weight: bold;
+}
+

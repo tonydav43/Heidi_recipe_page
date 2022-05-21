@@ -1,0 +1,19 @@
+.delete_user-h4 {
+    margin-top: 75px;;
+    width: fit-content;
+    text-align: center;
+    background-color:lightgray;
+    border: 1px solid #270644;
+}
+
+.div-delete_user {
+    margin-top: 50px;
+    text-align: center;
+    width: fit-content;
+    background-color: none ;
+}
+
+.form-confirm-delete {
+    width: fit-content;
+    padding: 20px;
+}

@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/create.css' %}">
+{% endblock css %}
+
+{% block extra_css %}
+<style>
+    body {
+        background: url(../../../static/images/toastie.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+ </style>
+ {% endblock extra_css %} 
+
+{% block content %}
+<div class="container create-h4">
+    <h4>Please complete the form to create your recipe.</h4>
+</div>
+<div class="container-fluid div-create">
+    <form class="form-recipe-create" enctype='multipart/form-data' method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+    <div class="d-grid gap-2">
+        <button type="submit" class="btn btn-success">Create Recipe</button>
+        <button onclick="location.href='{% url 'recipes_app:list' %}'" class="btn btn-warning" type="button">Cancel</button>   
+    </div>
+    </form>
+</div>
+{% endblock content %}
+
+

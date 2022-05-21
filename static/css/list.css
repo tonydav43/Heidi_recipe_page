@@ -1,0 +1,29 @@
+.list-h4 {
+    margin-top: 75px;;
+    width: fit-content;
+    text-align: center;
+    background-color:lightgray;
+    border: 1px solid #270644;
+}
+
+.div-list {
+    padding-top: 25px;
+}
+
+.form-list {
+    padding: 20px;
+    background-color:lightgray;
+    text-align: left;
+    width: fit-content; 
+    border: 1px solid #270644;
+    opacity: 75%;
+    margin: auto;
+    }
+
+.pagination {
+    justify-content: center;
+    font-weight: 500;
+    color: cyan;
+  }
+
+

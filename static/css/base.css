@@ -1,0 +1,57 @@
+body {
+    background-color: gray;
+}
+
+.base-dropdown { 
+    height:50%;
+    width:50%;
+}
+
+.dropdown-menu {
+    min-width: 1rem;
+    padding-left: 50px;
+    background-color: #C0C0C0;
+}
+
+.li-drop {
+    margin-right: 50px;
+    text-align: center;
+}
+
+.scrollable-menu {
+    height: auto;
+    max-height: 750px;
+    overflow-y:scroll;
+}
+
+.bg-light {
+    background-color: #C0C0C0 !important;
+}
+
+.welcome-msg {
+    margin-top: 2px;
+}
+
+.base-footer {
+    background-color: gray;
+    font-weight:600;
+}
+
+.d-flex {
+    margin: 0px;
+}
+
+.search {
+    margin-top: 5px;
+}
+.search input {
+    width:300px;
+    height:30px;
+    border-radius:25px;
+    border: none;
+} 
+
+#search-btn {
+    border-radius:25px;
+    border: none;
+}

@@ -1,0 +1,33 @@
+.edit-h4 {
+    margin-top: 100px;
+    width: fit-content;
+    text-align: center;
+    background-color:lightgray;
+    border: 1px solid #270644;
+}
+
+.div-edit {
+    padding-top: 25px;
+    padding-bottom: 100px;
+}
+
+@media only screen 
+  and (min-device-width: 320px)  {
+.form-profile-edit {
+    padding: 20px;
+    background-color:slategrey;
+    width: 500px;
+    border: 1px solid #270644;
+    opacity: 85%;
+    margin: auto; 
+    }
+}
+
+label {
+    float: left;
+    font-weight: bold;
+    }
+.register-error {
+    color: red;
+}
+
