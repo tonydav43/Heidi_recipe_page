@@ -3,9 +3,12 @@
 *.pyc
 __pycache__/
 local_settings.py
+media/
+
+# Database stuff
+*.sqlite3
+migrations/
 db.sqlite3
-db.sqlite3-journal
-media
 
 .env
 Scripts
