@@ -2,8 +2,11 @@
 Scripts
 Include
 Tutorial.txt
+
 # Text backup files
 .bak
 
 # Database
 db.sqlite3
+
+media/
