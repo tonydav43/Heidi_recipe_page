@@ -1,5 +1,6 @@
 from .models import Recipe
 from django import forms
+from django_countries.widgets import CountrySelectWidget
 
 class RecipeForm(forms.ModelForm):
     class Meta:
@@ -8,6 +9,7 @@ class RecipeForm(forms.ModelForm):
         exclude = ('recipe_active', 'author', 'slug')
         widgets = {
             'recipe_name': forms.TextInput(attrs={'class': "form-label", 'class': "form-control"}),
+            'recipe_country': CountrySelectWidget(attrs={'class': "form-label", 'class': "form-control"}),
             'recipe_food_group': forms.Select(attrs={'class': "form-label", 'class': "form-control"}),
             'recipe_ingredients': forms.Textarea(attrs={'class': "form-label", 'class': "form-control"}),
             'recipe_instructions': forms.Textarea(attrs={'class': "form-label", 'class': "form-control"}),
@@ -29,6 +31,7 @@ class RecipeUpdateForm(forms.ModelForm):
             'recipe_ingredients': forms.Textarea(attrs={'class': "form-label", 'class': "form-control"}),
             'recipe_instructions': forms.Textarea(attrs={'class': "form-label", 'class': "form-control"}),
             'recipe_notes': forms.Textarea(attrs={'class': "form-label", 'class': "form-control"}),
+            'recipe_country': forms.Select(attrs={'class': "form-label", 'class': "form-control"}),
         }
         help_texts = {
             'recipe_name': ('Update the recipe name here.'),

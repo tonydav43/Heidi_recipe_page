@@ -5,6 +5,7 @@ from django.utils.text import slugify
 from random import randint
 from django.utils import timezone
 from django.contrib.auth import get_user_model
+from django_countries.fields import CountryField
 
 # Create your models here.
 
@@ -31,6 +32,7 @@ class Recipe(models.Model):
         ("Other", "Other"),
     )
     recipe_name = models.CharField("Recipe Name", max_length=150, help_text="Please enter a recipe name")
+    recipe_country = CountryField("Country", help_text="Please select a country")
     recipe_food_group = models.CharField("Recipe Food Group", max_length=50, choices=catagories, help_text="Please select the food group from the dropdown menu") 
     recipe_ingredients = models.TextField("Recipe Ingredients", max_length=5000, help_text="Please enter the ingredients and quantities to be used")
     recipe_instructions = models.TextField("Recipe Instructions", max_length=25000, help_text="Please enter the instructions for the recipe")

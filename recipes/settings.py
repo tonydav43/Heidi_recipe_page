@@ -22,7 +22,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY')
+# SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = 'ahk2lkza#slf(66(ai@+^jiuo7q#d5#9ex-0i*-q%2rmt_t&o#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -44,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'fontawesomefree',
     'django_bootstrap_icons',
+    'django_countries',
 ]
 
 MIDDLEWARE = [
@@ -145,6 +147,9 @@ MEDIA_URL = "/media/"
 
 # Path where media is stored
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/media')
+
+# Path where country flags stored
+COUNTRIES_FLAG_URL = 'flags/country-flags-16px/16/{code}_16.png'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
