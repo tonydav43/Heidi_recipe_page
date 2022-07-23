@@ -27,6 +27,7 @@ class RecipeUpdateForm(forms.ModelForm):
         exclude = ('recipe_active', 'author', 'slug')
         widgets = {
             'recipe_name': forms.TextInput(attrs={'class': "form-label", 'class': "form-control"}),
+            'recipe_country': CountrySelectWidget(attrs={'class': "form-label", 'class': "form-control"}),
             'recipe_food_group': forms.Select(attrs={'class': "form-label", 'class': "form-control"}),
             'recipe_ingredients': forms.Textarea(attrs={'class': "form-label", 'class': "form-control"}),
             'recipe_instructions': forms.Textarea(attrs={'class': "form-label", 'class': "form-control"}),
@@ -34,6 +35,7 @@ class RecipeUpdateForm(forms.ModelForm):
         }
         help_texts = {
             'recipe_name': ('Update the recipe name here.'),
+            'recipe_country': ('Update the country here.'),
             'recipe_food_group': ('Update the recipe food group here.'),
             'recipe_ingredients': ('Update the recipe ingredients here.'),
             'recipe_instructions': ('Update the ingredient instructions here.'),
@@ -47,5 +49,5 @@ class RecipeUpdateForm(forms.ModelForm):
 
         
 
-        
+       
         
