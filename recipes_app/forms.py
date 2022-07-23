@@ -31,7 +31,6 @@ class RecipeUpdateForm(forms.ModelForm):
             'recipe_ingredients': forms.Textarea(attrs={'class': "form-label", 'class': "form-control"}),
             'recipe_instructions': forms.Textarea(attrs={'class': "form-label", 'class': "form-control"}),
             'recipe_notes': forms.Textarea(attrs={'class': "form-label", 'class': "form-control"}),
-            'recipe_country': forms.Select(attrs={'class': "form-label", 'class': "form-control"}),
         }
         help_texts = {
             'recipe_name': ('Update the recipe name here.'),
