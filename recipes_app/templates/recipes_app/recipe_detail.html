@@ -23,7 +23,8 @@
 <div class="container div-detail">
     <div class="card card-detail scrollable-menu" id="card-width">
         <div class="card-body">
-            <h2 class="card-title">Recipe for {{ recipe.recipe_name }} <img class="country-select-flag" src="{{ recipe.recipe_country.flag}}"></h2>
+            <h2 class="card-title">Recipe for {{ recipe.recipe_name }} </h2>
+            <h6>Country of origin is {{ recipe.recipe_country.name}} <img class="country-select-flag" src="{{ recipe.recipe_country.flag}}"></h6>
             {% if not recipe.author.username %}
                 <h6>Created on {{ recipe.recipe_timestamp }} author now deleted</h6>
             {% else %}
