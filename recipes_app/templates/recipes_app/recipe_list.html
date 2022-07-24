@@ -20,7 +20,13 @@
 
 {% block content %}
 <div class="container list-h4">
-    <h4>This a list of all the recipes on this site, there are {{page_obj.paginator.count}} in total.</h4>
+    {% if page_obj.paginator.count == 0 %}
+    <h4>There are no recipes currently on this website.</h4>
+    {% elif page_obj.paginator.count == 1 %}
+    <h4>There is {{ page_obj.paginator.count }} recipe on this website.</h4>
+    {% else %}
+    <h4>There are {{ page_obj.paginator.count }} recipes on this website in total.</h4>
+    {% endif %}
 </div>
 <div class="container div-list">
     <form class="form-list">
