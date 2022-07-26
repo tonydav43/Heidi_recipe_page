@@ -33,7 +33,7 @@
     <form class="form-food-group">
         {% for recipe in chicken_recipe_list %} 
         {% if recipe.recipe_food_group == "Chicken" %}
-        <h6>Recipe for <strong>{{ recipe.recipe_name }}</strong> which is the food group <strong>{{ recipe.recipe_food_group }}</strong>, click <a href="{% url 'recipes_app:detail' recipe.slug %}"><em>here </em></a>to view this recipe.</h6>
+        <h6>Recipe for <strong>{{ recipe.recipe_name }}</strong> which is in the food group <strong>{{ recipe.recipe_food_group }}</strong>, click <a href="{% url 'recipes_app:detail' recipe.slug %}"><em>here </em></a>to view this recipe.</h6>
         <hr/>
         {% endif %}
         {% endfor %} 
