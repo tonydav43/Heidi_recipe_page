@@ -1,6 +1,6 @@
 .list-h4 {
     margin-top: 75px;;
-    width: fit-content;
+    max-width: 1000px;
     text-align: center;
     background-color:lightgray;
     border: 1px solid #270644;

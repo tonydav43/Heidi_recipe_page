@@ -1,6 +1,6 @@
 .food-group-h4 {
     margin-top: 75px;;
-    width: fit-content;
+    max-width: 1000px;
     text-align: center;
     background-color:lightgray;
     border: 1px solid #270644;
@@ -14,7 +14,7 @@
     padding: 20px;
     background-color:lightgray;
     text-align: left;
-    max-width: 750px;
+    max-width: 1000px;
     border: 1px solid #270644;
     opacity: 75%;
     margin: auto;
