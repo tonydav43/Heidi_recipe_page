@@ -32,7 +32,7 @@
 
 <form action="{% url 'set_language' %}" method="post">
   {% csrf_token %}
-  <div class="container form-language">
+  <div class="container form-language input-group mb-3">
     <select class="form-control mr-2" name="language">
         {% get_current_language as LANGUAGE_CODE %}
         {% get_available_languages as LANGUAGES %}
@@ -46,7 +46,7 @@
           </option>
         {% endfor %}
       </select>
-    <button class="button-language btn btn-primary btn-sm" type="submit"><i class="fa-solid fa-globe"></i> Click to select language</button>
+    <button class="button-language btn btn-primary btn-sm" type="submit">Click to change language</button>
   </div>
 </form>
 
