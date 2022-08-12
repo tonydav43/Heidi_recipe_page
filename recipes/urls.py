@@ -19,16 +19,22 @@ from . views import HomeView, UnderConstructionView
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib.auth import views as auth_views
+from django.conf.urls.i18n import i18n_patterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('i18n/', include('django.conf.urls.i18n')), 
+]
+
+urlpatterns += i18n_patterns(
     path('', HomeView.as_view(), name='home'),
     path('under_construction/' , UnderConstructionView.as_view(), name='under_construction'),
     path('recipes/', include('recipes_app.urls')),
     path('account/', include('accounts.urls')),
-    path('accounts/', include('django.contrib.auth.urls')),
-]
+    path('accounts/', include('django.contrib.auth.urls')),      
+)
 
 if settings.DEBUG:
         urlpatterns += static(settings.MEDIA_URL,
-                              document_root=settings.MEDIA_ROOT)
+        document_root=settings.MEDIA_ROOT)
+

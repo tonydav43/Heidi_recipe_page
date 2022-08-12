@@ -123,4 +123,8 @@ def recipe_search_view(request):
     else:
         return render(request, "recipes_app/recipe_search.html", {})
 
+def language_view(request):
+    template_name = 'recipes_app/language.html'
+    return render(request, 'recipes_app/language.html')
+
 

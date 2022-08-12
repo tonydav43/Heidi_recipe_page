@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/language.css' %}">
+{% endblock css %}
+
+{% block extra_css %}
+<div class="container">
+  <style>
+      body {
+          background: url(../../../static/images/World.webp)no-repeat center center fixed;
+          -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+  </style>
+</div>
+{% endblock extra_css %} 
+
+{% block content %}
+<div class="container h4-language">
+  <h4>We currently only support Norwegian and English languages</h4>
+  <h4>If you wish another language to be added, please click
+    <a class="text-dark" href="mailto:tonydav43@hotmail.co.uk?subject=Language Addition">here</a> to contact us 
+  </h4>
+</div>
+
+<form action="{% url 'set_language' %}" method="post">
+  {% csrf_token %}
+  <div class="container form-language">
+    <select class="form-control mr-2" name="language">
+        {% get_current_language as LANGUAGE_CODE %}
+        {% get_available_languages as LANGUAGES %}
+        {% get_language_info_list for LANGUAGES as languages %}
+        {% for language in languages %}
+          <option value="{{ language.code }}"
+            {% if language.code == LANGUAGE_CODE %} 
+              selected="selected"
+            {% endif %}>
+            {{ language.name_local }} ({{ language.code }})
+          </option>
+        {% endfor %}
+      </select>
+    <button class="button-language btn btn-primary btn-sm" type="submit"><i class="fa-solid fa-globe"></i> Click to select language</button>
+  </div>
+</form>
+
+{% endblock content %}
+
+  

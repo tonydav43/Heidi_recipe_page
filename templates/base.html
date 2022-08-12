@@ -1,3 +1,5 @@
+{% load i18n %}
+
 {% load static %}
 
 <html lang="en">
@@ -54,6 +56,11 @@
                   <li class="li-drop"><a class="dropdown-item" href="{% url 'recipes_app:other' %}">Others</a><img src="{% static 'images/yorkshires.jpg' %}" alt="other" class="base-dropdown img-thumbnail rounded-circle"></li>
                 </ul>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.thecalculatorsite.com/cooking/cooking-calculator.php" target="_blank">
+                  <i class="fa-solid fa-money-bill-transfer"></i> Conversion Calculator
+                </a>
+              </li>
             </ul>
             <!--navbar right-->
             <ul class="navbar-nav mb-2 mb-lg-0">
@@ -64,7 +71,10 @@
                   <input class="form-control me-1" type="search" placeholder="Search Recipes" name="searched">
                   <button type="submit" class="btn btn-success btn-sm"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
                 </form> 
-            </div>
+              </div>
+              <!--change language-->
+                  <a class="nav-link" href="{% url 'recipes_app:language' %}"><i class="fa-solid fa-globe"></i> Select Language</a>
+
               {% if request.user.is_authenticated %}
                 <li class="welcome-msg">
                   <h6 class="nav-link">Welcome back {{ user.username }} </h6>

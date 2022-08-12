@@ -21,6 +21,7 @@ urlpatterns = [
    path('other/', views.RecipeOtherListView.as_view(), name='other'),
    path('detail/<slug:slug>', views.RecipeDetailView.as_view(), name='detail'),
    path('update/<slug:slug>', views.RecipeUpdateView.as_view(), name='update'),
-   path('delete/<slug:slug>', views.RecipeDeleteView.as_view(), name='delete'),  
+   path('delete/<slug:slug>', views.RecipeDeleteView.as_view(), name='delete'),
+   path('language/', views.language_view,  name="language"),  
 ]
 
