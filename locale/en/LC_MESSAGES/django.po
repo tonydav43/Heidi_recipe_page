@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-13 17:30+0200\n"
+"POT-Creation-Date: 2022-08-13 21:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,8 +28,8 @@ msgstr ""
 
 #: .\accounts\templates\accounts\account_confirm_delete.html:27
 msgid ""
-"By clicking the Confirm Account Delete buttton, you will be deleting all "
-"your personal information"
+"By clicking the Confirm Account Delete button, you will be deleting all your "
+"personal information"
 msgstr ""
 
 #: .\accounts\templates\accounts\account_confirm_delete.html:28
@@ -130,6 +130,10 @@ msgstr ""
 
 #: .\accounts\templates\accounts\register.html:25
 msgid "Please complete the form to register."
+msgstr ""
+
+#: .\accounts\templates\accounts\register.html:36
+msgid "{{ field.help_text }}"
 msgstr ""
 
 #: .\accounts\templates\accounts\register.html:45 .\templates\base.html:90
@@ -260,7 +264,7 @@ msgstr ""
 #: .\recipes_app\templates\recipes_app\lamb_list.html:50
 #: .\recipes_app\templates\recipes_app\other_list.html:50
 #: .\recipes_app\templates\recipes_app\pork_list.html:50
-#: .\recipes_app\templates\recipes_app\recipe_list.html:48
+#: .\recipes_app\templates\recipes_app\recipe_list.html:47
 #: .\recipes_app\templates\recipes_app\recipe_search.html:47
 #: .\recipes_app\templates\recipes_app\soup_list.html:50
 #: .\recipes_app\templates\recipes_app\vegetable_list.html:50
@@ -275,7 +279,7 @@ msgstr ""
 #: .\recipes_app\templates\recipes_app\lamb_list.html:51
 #: .\recipes_app\templates\recipes_app\other_list.html:51
 #: .\recipes_app\templates\recipes_app\pork_list.html:51
-#: .\recipes_app\templates\recipes_app\recipe_list.html:49
+#: .\recipes_app\templates\recipes_app\recipe_list.html:48
 #: .\recipes_app\templates\recipes_app\recipe_search.html:48
 #: .\recipes_app\templates\recipes_app\soup_list.html:51
 #: .\recipes_app\templates\recipes_app\vegetable_list.html:51
@@ -290,7 +294,7 @@ msgstr ""
 #: .\recipes_app\templates\recipes_app\lamb_list.html:55
 #: .\recipes_app\templates\recipes_app\other_list.html:55
 #: .\recipes_app\templates\recipes_app\pork_list.html:55
-#: .\recipes_app\templates\recipes_app\recipe_list.html:53
+#: .\recipes_app\templates\recipes_app\recipe_list.html:52
 #: .\recipes_app\templates\recipes_app\recipe_search.html:52
 #: .\recipes_app\templates\recipes_app\soup_list.html:55
 #: .\recipes_app\templates\recipes_app\vegetable_list.html:55
@@ -305,7 +309,7 @@ msgstr ""
 #: .\recipes_app\templates\recipes_app\lamb_list.html:55
 #: .\recipes_app\templates\recipes_app\other_list.html:55
 #: .\recipes_app\templates\recipes_app\pork_list.html:55
-#: .\recipes_app\templates\recipes_app\recipe_list.html:53
+#: .\recipes_app\templates\recipes_app\recipe_list.html:52
 #: .\recipes_app\templates\recipes_app\recipe_search.html:52
 #: .\recipes_app\templates\recipes_app\soup_list.html:55
 #: .\recipes_app\templates\recipes_app\vegetable_list.html:55
@@ -320,7 +324,7 @@ msgstr ""
 #: .\recipes_app\templates\recipes_app\lamb_list.html:59
 #: .\recipes_app\templates\recipes_app\other_list.html:59
 #: .\recipes_app\templates\recipes_app\pork_list.html:59
-#: .\recipes_app\templates\recipes_app\recipe_list.html:57
+#: .\recipes_app\templates\recipes_app\recipe_list.html:56
 #: .\recipes_app\templates\recipes_app\recipe_search.html:56
 #: .\recipes_app\templates\recipes_app\soup_list.html:59
 #: .\recipes_app\templates\recipes_app\vegetable_list.html:59
@@ -335,7 +339,7 @@ msgstr ""
 #: .\recipes_app\templates\recipes_app\lamb_list.html:60
 #: .\recipes_app\templates\recipes_app\other_list.html:60
 #: .\recipes_app\templates\recipes_app\pork_list.html:60
-#: .\recipes_app\templates\recipes_app\recipe_list.html:58
+#: .\recipes_app\templates\recipes_app\recipe_list.html:57
 #: .\recipes_app\templates\recipes_app\recipe_search.html:57
 #: .\recipes_app\templates\recipes_app\soup_list.html:60
 #: .\recipes_app\templates\recipes_app\vegetable_list.html:60
@@ -648,10 +652,6 @@ msgstr ""
 msgid "Copyright"
 msgstr ""
 
-#: .\templates\base.html:120
-msgid "tonydav43@hotmail.co.uk"
-msgstr ""
-
 #: .\templates\home.html:14
 msgid "The Best Recipe Page"
 msgstr ""
@@ -677,8 +677,11 @@ msgid "log in page."
 msgstr ""
 
 #: .\templates\registration\password_reset_confirm.html:26
-#: .\templates\registration\password_reset_confirm.html:27
 msgid "Enter new password"
+msgstr ""
+
+#: .\templates\registration\password_reset_confirm.html:27
+msgid "If you did not request a password re-set, simply ignore this email"
 msgstr ""
 
 #: .\templates\registration\password_reset_confirm.html:35
