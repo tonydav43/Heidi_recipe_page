@@ -73,7 +73,9 @@ class ChangePasswordPageForm(PasswordChangeForm):
         super().__init__(*args, **kwargs)
         self.fields['old_password'].widget.attrs.update({'class': "form-label", 'class': "form-control"})
         self.fields['new_password1'].widget.attrs.update({'class': "form-label", 'class': "form-control"})
-        self.fields['new_password2'].widget.attrs.update({'class': "form-label", 'class': "form-control"})  
+        self.fields['new_password2'].widget.attrs.update({'class': "form-label", 'class': "form-control"})
+        self.fields['old_password'].help_text = _("Please enter your current password")
+        self.fields['new_password2'].help_text = _("Please re-enter your new password")   
         
         
     

@@ -734,10 +734,12 @@ msgid "Please come back another time"
 msgstr "Kom gjerne tilbake en annen gang"
 
 #: .\accounts\forms.py:12
+#: .\accounts\forms.py:42
 msgid "First Name"
 msgstr "Fornavn"
 
 #: .\accounts\forms.py:13
+#: .\accounts\forms.py:43
 msgid "Last Name"
 msgstr "Etternavn"
 
@@ -746,6 +748,7 @@ msgid "Userrname"
 msgstr "Brukernavn"
 
 #: .\accounts\forms.py:15
+#: .\accounts\forms.py:44
 msgid "Email"
 msgstr "E-post"
 
@@ -772,18 +775,6 @@ msgstr "Vennligst skriv inn et passord, det må være en blanding av bokstaver o
 #: .\accounts\forms.py:28
 msgid "Please re-enter your password"
 msgstr "Vennligst skriv inn passordet ditt på nytt"
-
-#: .\accounts\forms.py:42
-msgid "First Name"
-msgstr "Fornavn"
-
-#: .\accounts\forms.py:43
-msgid "Last Name"
-msgstr "Etternavn"
-
-#: .\accounts\forms.py:44
-msgid "Email"
-msgstr "E-post"
 
 #: .\accounts\forms.py:48
 msgid "Please change your first name if required"
@@ -812,4 +803,12 @@ msgstr "Nytt passord"
 #: .\accounts\forms.py:69
 msgid "Confirm new password"
 msgstr "Bekrefte nytt passord"
+
+#: .\accounts\forms.py:77
+msgid "Please enter your current password"
+msgstr "Vennligst skriv inn ditt nåværende passord"
+
+#: .\accounts\forms.py:78
+msgid "Please re-enter your new password"
+msgstr "Vennligst skriv inn ditt nye passord på nytt"
 
