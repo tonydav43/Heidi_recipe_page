@@ -22,15 +22,15 @@
 
 {% block content %}
 <div class="container create-h4">
-    <h4>Please edit the form to update your recipe.</h4>
+    <h4>{% trans "Please edit the form to update your recipe." %}</h4>
 </div>
 <div class="container-fluid div-create">
     <form class="form-recipe-create" enctype='multipart/form-data' method="POST">
         {% csrf_token %}
         {{ form.as_p }}
     <div class="d-grid gap-2">
-        <button type="submit" class="btn btn-success">Update Recipe</button>
-        <button onclick="location.href='{% url 'recipes_app:detail' recipe.slug %}'" class="btn btn-warning" type="button">Cancel</button>    
+        <button type="submit" class="btn btn-success">{% trans "Update Recipe" %}</button>
+        <button onclick="location.href='{% url 'recipes_app:detail' recipe.slug %}'" class="btn btn-warning" type="button">{% trans "Cancel" %}</button>    
     </div>
     </form>
 </div>

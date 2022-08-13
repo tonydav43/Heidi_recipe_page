@@ -1,0 +1,734 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-13 17:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\accounts\templates\accounts\account_confirm_delete.html:25
+msgid "Are you sure you want to delete the user account named"
+msgstr "Er du sikker på at du vil slette"
+
+#: .\accounts\templates\accounts\account_confirm_delete.html:26
+msgid "THIS CANNOT BE UNDONE"
+msgstr "DETTE KAN IKKE ANGRES"
+
+#: .\accounts\templates\accounts\account_confirm_delete.html:27
+msgid "By clicking the Confirm Account Delete buttton, you will be deleting all your personal information"
+msgstr "Ved å klikke på knappen Bekreft sletting av konto, vil du slette all din personlige informasjon"
+
+#: .\accounts\templates\accounts\account_confirm_delete.html:28
+msgid "Any recipes you created will NOT be deleted"
+msgstr "Eventuelle oppskrifter du har laget vil IKKE bli slettet"
+
+#: .\accounts\templates\accounts\account_confirm_delete.html:29
+msgid "If you want them deleted, then you need to email an admin by clicking the link below"
+msgstr "Hvis du vil at de skal slettes, må du sende en e-post til en administrator ved å klikke på lenken nedenfor"
+
+#: .\accounts\templates\accounts\account_confirm_delete.html:30
+msgid "Email the site admin"
+msgstr "Send e-post til nettstedets administrator"
+
+#: .\accounts\templates\accounts\account_confirm_delete.html:37
+msgid "Confirm Account Delete"
+msgstr "Bekreft sletting av konto"
+
+#: .\accounts\templates\accounts\account_confirm_delete.html:38
+#: .\accounts\templates\accounts\change_password.html:46
+#: .\accounts\templates\accounts\profile.html:36
+#: .\accounts\templates\accounts\profile_edit.html:48
+#: .\accounts\templates\accounts\register.html:46
+#: .\recipes_app\templates\recipes_app\recipe_confirm_delete.html:29
+#: .\recipes_app\templates\recipes_app\recipe_form.html:33
+#: .\recipes_app\templates\recipes_app\recipe_update.html:33
+#: .\templates\registration\password_reset_confirm.html:36
+#: .\templates\registration\password_reset_form.html:34
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: .\accounts\templates\accounts\change_password.html:25
+msgid "Here is your password reset form"
+msgstr "Her er skjemaet for tilbakestilling av passord"
+
+#: .\accounts\templates\accounts\change_password.html:45
+#: .\accounts\templates\accounts\profile_edit.html:46
+msgid "Click to change your password"
+msgstr "Klikk for å endre passordet ditt"
+
+#: .\accounts\templates\accounts\login.html:27
+msgid "Please login to continue."
+msgstr "Vennligst Logg inn for å fortsette."
+
+#: .\accounts\templates\accounts\login.html:40
+msgid "Email Address"
+msgstr "Epostadresse"
+
+#: .\accounts\templates\accounts\login.html:44
+msgid "Password"
+msgstr "Passord"
+
+#: .\accounts\templates\accounts\login.html:47
+msgid "Login"
+msgstr "Logg Inn"
+
+#: .\accounts\templates\accounts\login.html:48
+msgid "Forgot password"
+msgstr "Glemt passord"
+
+#: .\accounts\templates\accounts\profile.html:25
+msgid "Here is your profile"
+msgstr "Her er profilen din"
+
+#: .\accounts\templates\accounts\profile.html:29
+msgid "Your first name is:"
+msgstr "Fornavnet ditt er:"
+
+#: .\accounts\templates\accounts\profile.html:30
+msgid "Your last name is:"
+msgstr "Etternavnet ditt er:"
+
+#: .\accounts\templates\accounts\profile.html:31
+msgid "Your username is:"
+msgstr "Brukernavnet ditt er:"
+
+#: .\accounts\templates\accounts\profile.html:32
+msgid "Your email address is:"
+msgstr "Din e-postadresse er:"
+
+#: .\accounts\templates\accounts\profile.html:35
+msgid "Update Your Profile Details"
+msgstr "Oppdater profildetaljer"
+
+#: .\accounts\templates\accounts\profile_edit.html:25
+msgid "Here are your editable profile fields"
+msgstr "Her er de redigerbare profilfeltene dine"
+
+#: .\accounts\templates\accounts\profile_edit.html:45
+msgid "Click to update your profile details"
+msgstr "Klikk for å oppdatere profildetaljene dine"
+
+#: .\accounts\templates\accounts\profile_edit.html:47
+msgid "Click to delete your account"
+msgstr "Klikk for å slette kontoen din"
+
+#: .\accounts\templates\accounts\register.html:25
+msgid "Please complete the form to register."
+msgstr "Fyll ut skjemaet for å registrere deg."
+
+#: .\accounts\templates\accounts\register.html:45 .\templates\base.html:90
+msgid "Register"
+msgstr "Registrere"
+
+#: .\recipes_app\templates\recipes_app\beef_list.html:26
+msgid "There are no recipes in the food group beef."
+msgstr "Det er ingen oppskrifter i matgruppen storfekjøtt."
+
+#: .\recipes_app\templates\recipes_app\beef_list.html:28
+#: .\recipes_app\templates\recipes_app\cake_list.html:28
+#: .\recipes_app\templates\recipes_app\chicken_list.html:28
+#: .\recipes_app\templates\recipes_app\dessert_list.html:28
+#: .\recipes_app\templates\recipes_app\fish_list.html:28
+#: .\recipes_app\templates\recipes_app\lamb_list.html:28
+#: .\recipes_app\templates\recipes_app\other_list.html:28
+#: .\recipes_app\templates\recipes_app\pork_list.html:28
+#: .\recipes_app\templates\recipes_app\recipe_list.html:28
+#: .\recipes_app\templates\recipes_app\soup_list.html:28
+#: .\recipes_app\templates\recipes_app\vegetable_list.html:28
+msgid "There is"
+msgstr "Det er"
+
+#: .\recipes_app\templates\recipes_app\beef_list.html:28
+msgid "recipe in the food group beef."
+msgstr "oppskrift i matgruppen biff."
+
+#: .\recipes_app\templates\recipes_app\beef_list.html:30
+#: .\recipes_app\templates\recipes_app\cake_list.html:30
+#: .\recipes_app\templates\recipes_app\chicken_list.html:30
+#: .\recipes_app\templates\recipes_app\dessert_list.html:30
+#: .\recipes_app\templates\recipes_app\fish_list.html:30
+#: .\recipes_app\templates\recipes_app\lamb_list.html:30
+#: .\recipes_app\templates\recipes_app\other_list.html:30
+#: .\recipes_app\templates\recipes_app\pork_list.html:30
+#: .\recipes_app\templates\recipes_app\recipe_list.html:30
+#: .\recipes_app\templates\recipes_app\soup_list.html:30
+#: .\recipes_app\templates\recipes_app\vegetable_list.html:30
+msgid "There are"
+msgstr "Det er"
+
+#: .\recipes_app\templates\recipes_app\beef_list.html:30
+msgid "recipes in the food group beef."
+msgstr "oppskrifter i matgruppen storfekjøtt."
+
+#: .\recipes_app\templates\recipes_app\beef_list.html:38
+#: .\recipes_app\templates\recipes_app\cake_list.html:38
+#: .\recipes_app\templates\recipes_app\chicken_list.html:38
+#: .\recipes_app\templates\recipes_app\dessert_list.html:38
+#: .\recipes_app\templates\recipes_app\fish_list.html:38
+#: .\recipes_app\templates\recipes_app\lamb_list.html:38
+#: .\recipes_app\templates\recipes_app\other_list.html:38
+#: .\recipes_app\templates\recipes_app\pork_list.html:38
+#: .\recipes_app\templates\recipes_app\recipe_detail.html:27
+#: .\recipes_app\templates\recipes_app\recipe_list.html:36
+#: .\recipes_app\templates\recipes_app\soup_list.html:38
+#: .\recipes_app\templates\recipes_app\vegetable_list.html:38
+msgid "Recipe for"
+msgstr "Oppskrift på"
+
+#: .\recipes_app\templates\recipes_app\beef_list.html:38
+#: .\recipes_app\templates\recipes_app\cake_list.html:38
+#: .\recipes_app\templates\recipes_app\chicken_list.html:38
+#: .\recipes_app\templates\recipes_app\dessert_list.html:38
+#: .\recipes_app\templates\recipes_app\fish_list.html:38
+#: .\recipes_app\templates\recipes_app\lamb_list.html:38
+#: .\recipes_app\templates\recipes_app\other_list.html:38
+#: .\recipes_app\templates\recipes_app\pork_list.html:38
+#: .\recipes_app\templates\recipes_app\recipe_list.html:36
+#: .\recipes_app\templates\recipes_app\soup_list.html:38
+#: .\recipes_app\templates\recipes_app\vegetable_list.html:38
+msgid "which is in the food group"
+msgstr "som er i matvaregruppen"
+
+#: .\recipes_app\templates\recipes_app\beef_list.html:38
+#: .\recipes_app\templates\recipes_app\cake_list.html:38
+#: .\recipes_app\templates\recipes_app\chicken_list.html:38
+#: .\recipes_app\templates\recipes_app\dessert_list.html:38
+#: .\recipes_app\templates\recipes_app\fish_list.html:38
+#: .\recipes_app\templates\recipes_app\lamb_list.html:38
+#: .\recipes_app\templates\recipes_app\other_list.html:38
+#: .\recipes_app\templates\recipes_app\pork_list.html:38
+#: .\recipes_app\templates\recipes_app\recipe_list.html:36
+#: .\recipes_app\templates\recipes_app\soup_list.html:38
+#: .\recipes_app\templates\recipes_app\vegetable_list.html:38
+#: .\templates\registration\password_reset_done.html:35
+msgid "click"
+msgstr "klikk"
+
+#: .\recipes_app\templates\recipes_app\beef_list.html:38
+#: .\recipes_app\templates\recipes_app\cake_list.html:38
+#: .\recipes_app\templates\recipes_app\chicken_list.html:38
+#: .\recipes_app\templates\recipes_app\dessert_list.html:38
+#: .\recipes_app\templates\recipes_app\fish_list.html:38
+#: .\recipes_app\templates\recipes_app\lamb_list.html:38
+#: .\recipes_app\templates\recipes_app\language.html:29
+#: .\recipes_app\templates\recipes_app\other_list.html:38
+#: .\recipes_app\templates\recipes_app\pork_list.html:38
+#: .\recipes_app\templates\recipes_app\recipe_list.html:36
+#: .\recipes_app\templates\recipes_app\recipe_search.html:33
+#: .\recipes_app\templates\recipes_app\soup_list.html:38
+#: .\recipes_app\templates\recipes_app\vegetable_list.html:38
+#: .\templates\registration\password_reset_confirm.html:43
+#: .\templates\registration\password_reset_done.html:35
+msgid "here"
+msgstr "her"
+
+#: .\recipes_app\templates\recipes_app\beef_list.html:38
+#: .\recipes_app\templates\recipes_app\cake_list.html:38
+#: .\recipes_app\templates\recipes_app\chicken_list.html:38
+#: .\recipes_app\templates\recipes_app\dessert_list.html:38
+#: .\recipes_app\templates\recipes_app\fish_list.html:38
+#: .\recipes_app\templates\recipes_app\lamb_list.html:38
+#: .\recipes_app\templates\recipes_app\other_list.html:38
+#: .\recipes_app\templates\recipes_app\pork_list.html:38
+#: .\recipes_app\templates\recipes_app\recipe_list.html:36
+#: .\recipes_app\templates\recipes_app\soup_list.html:38
+#: .\recipes_app\templates\recipes_app\vegetable_list.html:38
+msgid "to view this recipe."
+msgstr "for å se denne oppskriften."
+
+#: .\recipes_app\templates\recipes_app\beef_list.html:50
+#: .\recipes_app\templates\recipes_app\cake_list.html:50
+#: .\recipes_app\templates\recipes_app\chicken_list.html:50
+#: .\recipes_app\templates\recipes_app\dessert_list.html:50
+#: .\recipes_app\templates\recipes_app\fish_list.html:50
+#: .\recipes_app\templates\recipes_app\lamb_list.html:50
+#: .\recipes_app\templates\recipes_app\other_list.html:50
+#: .\recipes_app\templates\recipes_app\pork_list.html:50
+#: .\recipes_app\templates\recipes_app\recipe_list.html:48
+#: .\recipes_app\templates\recipes_app\recipe_search.html:47
+#: .\recipes_app\templates\recipes_app\soup_list.html:50
+#: .\recipes_app\templates\recipes_app\vegetable_list.html:50
+msgid "first"
+msgstr "først"
+
+#: .\recipes_app\templates\recipes_app\beef_list.html:51
+#: .\recipes_app\templates\recipes_app\cake_list.html:51
+#: .\recipes_app\templates\recipes_app\chicken_list.html:51
+#: .\recipes_app\templates\recipes_app\dessert_list.html:51
+#: .\recipes_app\templates\recipes_app\fish_list.html:51
+#: .\recipes_app\templates\recipes_app\lamb_list.html:51
+#: .\recipes_app\templates\recipes_app\other_list.html:51
+#: .\recipes_app\templates\recipes_app\pork_list.html:51
+#: .\recipes_app\templates\recipes_app\recipe_list.html:49
+#: .\recipes_app\templates\recipes_app\recipe_search.html:48
+#: .\recipes_app\templates\recipes_app\soup_list.html:51
+#: .\recipes_app\templates\recipes_app\vegetable_list.html:51
+msgid "previous"
+msgstr "tidligere"
+
+#: .\recipes_app\templates\recipes_app\beef_list.html:55
+#: .\recipes_app\templates\recipes_app\cake_list.html:55
+#: .\recipes_app\templates\recipes_app\chicken_list.html:55
+#: .\recipes_app\templates\recipes_app\dessert_list.html:55
+#: .\recipes_app\templates\recipes_app\fish_list.html:55
+#: .\recipes_app\templates\recipes_app\lamb_list.html:55
+#: .\recipes_app\templates\recipes_app\other_list.html:55
+#: .\recipes_app\templates\recipes_app\pork_list.html:55
+#: .\recipes_app\templates\recipes_app\recipe_list.html:53
+#: .\recipes_app\templates\recipes_app\recipe_search.html:52
+#: .\recipes_app\templates\recipes_app\soup_list.html:55
+#: .\recipes_app\templates\recipes_app\vegetable_list.html:55
+msgid "Page"
+msgstr "Side"
+
+#: .\recipes_app\templates\recipes_app\beef_list.html:55
+#: .\recipes_app\templates\recipes_app\cake_list.html:55
+#: .\recipes_app\templates\recipes_app\chicken_list.html:55
+#: .\recipes_app\templates\recipes_app\dessert_list.html:55
+#: .\recipes_app\templates\recipes_app\fish_list.html:55
+#: .\recipes_app\templates\recipes_app\lamb_list.html:55
+#: .\recipes_app\templates\recipes_app\other_list.html:55
+#: .\recipes_app\templates\recipes_app\pork_list.html:55
+#: .\recipes_app\templates\recipes_app\recipe_list.html:53
+#: .\recipes_app\templates\recipes_app\recipe_search.html:52
+#: .\recipes_app\templates\recipes_app\soup_list.html:55
+#: .\recipes_app\templates\recipes_app\vegetable_list.html:55
+msgid "of"
+msgstr "av"
+
+#: .\recipes_app\templates\recipes_app\beef_list.html:59
+#: .\recipes_app\templates\recipes_app\cake_list.html:59
+#: .\recipes_app\templates\recipes_app\chicken_list.html:59
+#: .\recipes_app\templates\recipes_app\dessert_list.html:59
+#: .\recipes_app\templates\recipes_app\fish_list.html:59
+#: .\recipes_app\templates\recipes_app\lamb_list.html:59
+#: .\recipes_app\templates\recipes_app\other_list.html:59
+#: .\recipes_app\templates\recipes_app\pork_list.html:59
+#: .\recipes_app\templates\recipes_app\recipe_list.html:57
+#: .\recipes_app\templates\recipes_app\recipe_search.html:56
+#: .\recipes_app\templates\recipes_app\soup_list.html:59
+#: .\recipes_app\templates\recipes_app\vegetable_list.html:59
+msgid "next"
+msgstr "neste"
+
+#: .\recipes_app\templates\recipes_app\beef_list.html:60
+#: .\recipes_app\templates\recipes_app\cake_list.html:60
+#: .\recipes_app\templates\recipes_app\chicken_list.html:60
+#: .\recipes_app\templates\recipes_app\dessert_list.html:60
+#: .\recipes_app\templates\recipes_app\fish_list.html:60
+#: .\recipes_app\templates\recipes_app\lamb_list.html:60
+#: .\recipes_app\templates\recipes_app\other_list.html:60
+#: .\recipes_app\templates\recipes_app\pork_list.html:60
+#: .\recipes_app\templates\recipes_app\recipe_list.html:58
+#: .\recipes_app\templates\recipes_app\recipe_search.html:57
+#: .\recipes_app\templates\recipes_app\soup_list.html:60
+#: .\recipes_app\templates\recipes_app\vegetable_list.html:60
+msgid "last"
+msgstr "siste"
+
+#: .\recipes_app\templates\recipes_app\cake_list.html:26
+msgid "There are no recipes in the food group cake."
+msgstr "Det er ingen oppskrifter i matgruppekaken."
+
+#: .\recipes_app\templates\recipes_app\cake_list.html:28
+msgid "recipe in the food group cake."
+msgstr "oppskrift i matgruppen kake."
+
+#: .\recipes_app\templates\recipes_app\cake_list.html:30
+msgid "recipes in the food group cake."
+msgstr "oppskrifter i matgruppen kake."
+
+#: .\recipes_app\templates\recipes_app\chicken_list.html:26
+msgid "There are no recipes in the food group chicken."
+msgstr "Det er ingen oppskrifter i matgruppen kylling."
+
+#: .\recipes_app\templates\recipes_app\chicken_list.html:28
+msgid "recipe in the food group chicken."
+msgstr "oppskrift i matgruppen kylling."
+
+#: .\recipes_app\templates\recipes_app\chicken_list.html:30
+msgid "recipes in the food group chicken."
+msgstr "oppskrifter i matgruppen kylling."
+
+#: .\recipes_app\templates\recipes_app\dessert_list.html:26
+msgid "There are no recipes in the food group desserts."
+msgstr "Det er ingen oppskrifter i matgruppen desserter."
+
+#: .\recipes_app\templates\recipes_app\dessert_list.html:28
+msgid "recipe in the food group desserts."
+msgstr "oppskrift i matgruppen desserter."
+
+#: .\recipes_app\templates\recipes_app\dessert_list.html:30
+msgid "recipes in the food group desserts."
+msgstr "oppskrifter i matgruppen desserter."
+
+#: .\recipes_app\templates\recipes_app\fish_list.html:26
+msgid "There are no recipes in the food group fish."
+msgstr "Det finnes ingen oppskrifter i matgruppen fisk."
+
+#: .\recipes_app\templates\recipes_app\fish_list.html:28
+msgid "recipe in the food group fish."
+msgstr "oppskrift i matgruppen fisk."
+
+#: .\recipes_app\templates\recipes_app\fish_list.html:30
+msgid "recipes in the food group fish."
+msgstr "oppskrifter i matgruppen fisk."
+
+#: .\recipes_app\templates\recipes_app\lamb_list.html:26
+msgid "There are no recipes in the food group lamb."
+msgstr "Det er ingen oppskrifter i matgruppen lam."
+
+#: .\recipes_app\templates\recipes_app\lamb_list.html:28
+msgid "recipe in the food group lamb."
+msgstr "oppskrift i matgruppen lam."
+
+#: .\recipes_app\templates\recipes_app\lamb_list.html:30
+msgid "recipes in the food group lamb."
+msgstr "oppskrifter i matgruppen lam."
+
+#: .\recipes_app\templates\recipes_app\language.html:27
+msgid "We currently only support Norwegian and English languages"
+msgstr "Vi støtter foreløpig kun norsk og engelsk språk"
+
+#: .\recipes_app\templates\recipes_app\language.html:28
+msgid "If you wish another language to be added, please click"
+msgstr "Hvis du ønsker at et annet språk skal legges til, vennligst klikk"
+
+#: .\recipes_app\templates\recipes_app\language.html:29
+msgid "to contact us"
+msgstr "å kontakte oss"
+
+#: .\recipes_app\templates\recipes_app\language.html:50
+msgid "Click to change language"
+msgstr "Klikk for å endre språk"
+
+#: .\recipes_app\templates\recipes_app\other_list.html:26
+msgid "There are no recipes in the food group other."
+msgstr "Det er ingen oppskrifter i matgruppen annet."
+
+#: .\recipes_app\templates\recipes_app\other_list.html:28
+msgid "recipe in the food group other."
+msgstr "oppskrift i matvaregruppen annet."
+
+#: .\recipes_app\templates\recipes_app\other_list.html:30
+msgid "recipes in the food group other."
+msgstr "oppskrifter i matvaregruppen andre."
+
+#: .\recipes_app\templates\recipes_app\pork_list.html:26
+msgid "There are no recipes in the food group pork."
+msgstr "Det er ingen oppskrifter i matgruppen svinekjøtt."
+
+#: .\recipes_app\templates\recipes_app\pork_list.html:28
+msgid "recipe in the food group pork."
+msgstr "oppskrift i matgruppen svinekjøtt."
+
+#: .\recipes_app\templates\recipes_app\pork_list.html:30
+msgid "recipes in the food group pork."
+msgstr "oppskrifter i matgruppen svinekjøtt."
+
+#: .\recipes_app\templates\recipes_app\recipe_confirm_delete.html:25
+msgid "Are you sure you want to delete the recipe named"
+msgstr "Er du sikker på at du vil slette oppskriften som heter"
+
+#: .\recipes_app\templates\recipes_app\recipe_confirm_delete.html:25
+msgid "this cannot be undone?"
+msgstr "dette kan ikke angres?"
+
+#: .\recipes_app\templates\recipes_app\recipe_confirm_delete.html:28
+msgid "Confirm"
+msgstr "Bekrefte"
+
+#: .\recipes_app\templates\recipes_app\recipe_detail.html:28
+msgid "Country of origin is"
+msgstr "Opprinnelsesland er"
+
+#: .\recipes_app\templates\recipes_app\recipe_detail.html:30
+msgid "Created on"
+msgstr "Opprettet den"
+
+#: .\recipes_app\templates\recipes_app\recipe_detail.html:30
+msgid "author now deleted"
+msgstr "forfatteren er nå slettet"
+
+#: .\recipes_app\templates\recipes_app\recipe_detail.html:32
+msgid "Created by -"
+msgstr "Laget av -"
+
+#: .\recipes_app\templates\recipes_app\recipe_detail.html:32
+msgid "on"
+msgstr "på"
+
+#: .\recipes_app\templates\recipes_app\recipe_detail.html:37
+msgid "Recipe Ingredients:"
+msgstr "Ingredienser i oppskriften:"
+
+#: .\recipes_app\templates\recipes_app\recipe_detail.html:39
+msgid "Recipe Instructions:"
+msgstr "Oppskriftsinstruksjoner:"
+
+#: .\recipes_app\templates\recipes_app\recipe_detail.html:41
+msgid "Recipe Notes:"
+msgstr "Oppskriftsnotater:"
+
+#: .\recipes_app\templates\recipes_app\recipe_detail.html:44
+#: .\recipes_app\templates\recipes_app\recipe_update.html:32
+msgid "Update Recipe"
+msgstr "Oppdater oppskrift"
+
+#: .\recipes_app\templates\recipes_app\recipe_detail.html:45
+msgid "Delete Recipe"
+msgstr "Slett oppskrift"
+
+#: .\recipes_app\templates\recipes_app\recipe_form.html:25
+msgid "Please complete the form to create your recipe."
+msgstr "Fyll ut skjemaet for å lage din oppskrift."
+
+#: .\recipes_app\templates\recipes_app\recipe_form.html:32
+#: .\templates\base.html:35
+msgid "Create Recipe"
+msgstr "Lag oppskrift"
+
+#: .\recipes_app\templates\recipes_app\recipe_list.html:26
+msgid "There are no recipes currently on this website."
+msgstr "Det er ingen oppskrifter på denne nettsiden for øyeblikket."
+
+#: .\recipes_app\templates\recipes_app\recipe_list.html:28
+msgid "recipe on this website."
+msgstr "oppskrift på denne nettsiden."
+
+#: .\recipes_app\templates\recipes_app\recipe_list.html:30
+msgid "recipes on this website in total."
+msgstr "oppskrifter på denne nettsiden totalt."
+
+#: .\recipes_app\templates\recipes_app\recipe_search.html:26
+msgid "You searched for a recipe containing the word"
+msgstr "Du søkte etter en oppskrift som inneholder ordet"
+
+#: .\recipes_app\templates\recipes_app\recipe_search.html:26
+msgid "this returned"
+msgstr "dette kom tilbake"
+
+#: .\recipes_app\templates\recipes_app\recipe_search.html:26
+msgid "results."
+msgstr "resultater."
+
+#: .\recipes_app\templates\recipes_app\recipe_search.html:33
+msgid "To view this recipe, click"
+msgstr "For å se denne oppskriften, klikk"
+
+#: .\recipes_app\templates\recipes_app\recipe_update.html:25
+msgid "Please edit the form to update your recipe."
+msgstr "Rediger skjemaet for å oppdatere oppskriften din."
+
+#: .\recipes_app\templates\recipes_app\soup_list.html:26
+msgid "There are no recipes in the food group soup."
+msgstr "Det er ingen oppskrifter i matvaregruppen suppe."
+
+#: .\recipes_app\templates\recipes_app\soup_list.html:28
+msgid "recipe in the food group soup."
+msgstr "oppskrift i matgruppen suppe."
+
+#: .\recipes_app\templates\recipes_app\soup_list.html:30
+msgid "recipes in the food group soup."
+msgstr "oppskrifter i matgruppen suppe."
+
+#: .\recipes_app\templates\recipes_app\vegetable_list.html:26
+msgid "There are no recipes in the food group vegetable."
+msgstr "Det er ingen oppskrifter i matvaregruppen grønnsak."
+
+#: .\recipes_app\templates\recipes_app\vegetable_list.html:28
+msgid "recipe in the food group vegetable."
+msgstr "oppskrift i matgruppen grønnsak."
+
+#: .\recipes_app\templates\recipes_app\vegetable_list.html:30
+msgid "recipes in the food group vegetable."
+msgstr "oppskrifter i matgruppen grønnsak."
+
+#: .\templates\base.html:31
+msgid "Home"
+msgstr "Hjem"
+
+#: .\templates\base.html:39
+msgid "View All Recipes"
+msgstr "Se alle oppskrifter"
+
+#: .\templates\base.html:44
+msgid "Recipes By Food Group"
+msgstr "Oppskrifter etter matgruppe"
+
+#: .\templates\base.html:47
+msgid "Beef"
+msgstr "Storfekjøtt"
+
+#: .\templates\base.html:48
+msgid "Pork"
+msgstr "Svinekjøtt"
+
+#: .\templates\base.html:49
+msgid "Lamb"
+msgstr "lam"
+
+#: .\templates\base.html:50
+msgid "Chicken"
+msgstr "Kylling"
+
+#: .\templates\base.html:51
+msgid "Fish"
+msgstr "Fisk"
+
+#: .\templates\base.html:52
+msgid "Vegetables"
+msgstr "Grønnsaker"
+
+#: .\templates\base.html:53
+msgid "Soups"
+msgstr "Supper"
+
+#: .\templates\base.html:54
+msgid "Desserts"
+msgstr "Desserter"
+
+#: .\templates\base.html:55
+msgid "Cakes"
+msgstr "Kaker"
+
+#: .\templates\base.html:56
+msgid "Others"
+msgstr "Andre"
+
+#: .\templates\base.html:61
+msgid "Conversion Calculator"
+msgstr "Konverteringskalkulator"
+
+#: .\templates\base.html:71
+msgid "Search Recipes"
+msgstr "Søk etter oppskrifter"
+
+#: .\templates\base.html:72
+msgid "Search"
+msgstr "Søk"
+
+#: .\templates\base.html:76
+msgid "Select Language"
+msgstr "Velg språk"
+
+#: .\templates\base.html:80
+msgid "Welcome back"
+msgstr "Velkommen tilbake"
+
+#: .\templates\base.html:83
+msgid "Profile"
+msgstr "Profil"
+
+#: .\templates\base.html:86
+msgid "Log Out"
+msgstr "Logg ut"
+
+#: .\templates\base.html:93
+msgid "Log In"
+msgstr "Logg Inn"
+
+#: .\templates\base.html:119
+msgid "Copyright"
+msgstr "opphavsrett"
+
+#: .\templates\home.html:14
+msgid "The Best Recipe Page"
+msgstr "Den beste oppskriftssiden"
+
+#: .\templates\home.html:15
+msgid "Forget the rest, cook the best"
+msgstr "Glem resten, lag det beste"
+
+#: .\templates\home.html:16
+msgid "with one of our recipes"
+msgstr "med en av våre oppskrifter"
+
+#: .\templates\registration\password_reset_complete.html:25
+msgid "Password reset complete."
+msgstr "Tilbakestilling av passord fullført."
+
+#: .\templates\registration\password_reset_complete.html:29
+msgid "Your new password has been set. You can log in now on the"
+msgstr "Ditt nye passord er angitt. Du kan logge inn nå på"
+
+#: .\templates\registration\password_reset_complete.html:29
+msgid "log in page."
+msgstr "påloggingssiden."
+
+#: .\templates\registration\password_reset_confirm.html:26
+#: .\templates\registration\password_reset_confirm.html:27
+msgid "Enter new password"
+msgstr "Skriv inn nytt passord"
+
+#: .\templates\registration\password_reset_confirm.html:35
+msgid "Click the button to reset your password."
+msgstr "Klikk på knappen for å tilbakestille passordet ditt."
+
+#: .\templates\registration\password_reset_confirm.html:41
+msgid "The password reset link was invalid, possibly because it has already been used."
+msgstr "Koblingen for tilbakestilling av passord var ugyldig, muligens fordi den allerede er brukt."
+
+#: .\templates\registration\password_reset_confirm.html:43
+msgid "Click"
+msgstr "Klikk"
+
+#: .\templates\registration\password_reset_confirm.html:43
+msgid "to resend another reset link"
+msgstr "for å sende en ny tilbakestillingskobling på nytt"
+
+#: .\templates\registration\password_reset_done.html:25
+msgid "Email has been sent, check your inbox."
+msgstr "E-post er sendt, sjekk innboksen din."
+
+#: .\templates\registration\password_reset_done.html:29
+msgid "We have emailed you the instructions for re-setting your password, you should receive the email shortly!"
+msgstr "Vi har sendt deg instruksjonene for å tilbakestille passordet ditt på e-post. Du bør motta e-posten snart!"
+
+#: .\templates\registration\password_reset_done.html:31
+msgid "If you have not received the email in a few minutes, check you junk/spam folder."
+msgstr "Hvis du ikke har mottatt e-posten på noen minutter, sjekk søppelpost-/søppelpostmappen din."
+
+#: .\templates\registration\password_reset_done.html:33
+msgid "or"
+msgstr "eller"
+
+#: .\templates\registration\password_reset_done.html:35
+msgid "to resend the link again."
+msgstr "for å sende lenken på nytt."
+
+#: .\templates\registration\password_reset_form.html:25
+msgid "Forgot your password"
+msgstr "Glemt passordet"
+
+#: .\templates\registration\password_reset_form.html:26
+msgid "No problem, just enter your email address below, and we'll email instructions for setting a new one."
+msgstr "Ikke noe problem, bare skriv inn e-postadressen din nedenfor, så sender vi instruksjoner på e-post for å angi en ny."
+
+#: .\templates\registration\password_reset_form.html:33
+msgid "Click the button and we will send you password reset instructions"
+msgstr "Klikk på knappen og vi vil sende deg instruksjoner for tilbakestilling av passord"
+
+#: .\templates\under_construction.html:14
+msgid "Sorry"
+msgstr "Unnskyld"
+
+#: .\templates\under_construction.html:15
+msgid "This page is under construction"
+msgstr "Denne siden er under konstruksjon"
+
+#: .\templates\under_construction.html:16
+msgid "Please come back another time"
+msgstr "Kom gjerne tilbake en annen gang"

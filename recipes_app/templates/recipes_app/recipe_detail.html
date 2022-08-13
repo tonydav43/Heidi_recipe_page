@@ -24,25 +24,25 @@
 <div class="container div-detail">
     <div class="card card-detail scrollable-menu" id="card-width">
         <div class="card-body">
-            <h2 class="card-title">Recipe for {{ recipe.recipe_name }} </h2>
-            <h6>Country of origin is {{ recipe.recipe_country.name}} <img class="country-select-flag" src="{{ recipe.recipe_country.flag}}"></h6>
+            <h2 class="card-title">{% trans "Recipe for" %} {{ recipe.recipe_name }} </h2>
+            <h6>{% trans "Country of origin is" %} {{ recipe.recipe_country.name}} <img class="country-select-flag" src="{{ recipe.recipe_country.flag}}"></h6>
             {% if not recipe.author.username %}
-                <h6>Created on {{ recipe.recipe_timestamp }} author now deleted</h6>
+                <h6>{% trans "Created on" %} {{ recipe.recipe_timestamp }} {% trans "author now deleted" %}</h6>
             {% else %}
-                <h6>Created by - {{ recipe.author.first_name }} {{ recipe.author.last_name }} on {{ recipe.recipe_timestamp }} </h6>
+                <h6>{% trans "Created by -" %} {{ recipe.author.first_name }} {{ recipe.author.last_name }} {% trans "on" %} {{ recipe.recipe_timestamp }} </h6>
             {% endif %}
         </div>
             <img src=" {{ recipe.recipe_image.url }}" class="card-img-top rounded-top" alt="{{ recipe.recipe_image }}">
         <ul class="list-group list-group-flush">
-            <h5 class="card-title">Recipe Ingredients:</h5>
+            <h5 class="card-title">{% trans "Recipe Ingredients:" %}</h5>
             <li class="list-group-item"> {{ recipe.recipe_ingredients|linebreaks }} </li>
-            <h5 class="card-title">Recipe Instructions:</h5>
+            <h5 class="card-title">{% trans "Recipe Instructions:" %}</h5>
             <li class="list-group-item"> {{ recipe.recipe_instructions|linebreaks }} </li>
-            <h5 class="card-title">Recipe Notes:</h5>
+            <h5 class="card-title">{% trans "Recipe Notes:" %}</h5>
             <li class="list-group-item"> {{ recipe.recipe_notes|linebreaks }} </li>
             {% if request.user == recipe.author %}
-                <button type="button" class="btn btn-success my-1"><a  id="btn-update"  href="{% url 'recipes_app:update' recipe.slug %}"{{recipe.recipe.slug}} class="h6-btn">Update Recipe</a></button>
-                <button type="button" class="btn btn-danger my-1"><a  id="btn-delete"  href="{% url 'recipes_app:delete' recipe.slug %}" class="h6-btn">Delete Recipe</a></button>
+                <button type="button" class="btn btn-success my-1"><a  id="btn-update"  href="{% url 'recipes_app:update' recipe.slug %}"{{recipe.recipe.slug}} class="h6-btn">{% trans "Update Recipe" %}</a></button>
+                <button type="button" class="btn btn-danger my-1"><a  id="btn-delete"  href="{% url 'recipes_app:delete' recipe.slug %}" class="h6-btn">{% trans "Delete Recipe" %}</a></button>
             {% endif %}
         </ul>
     </div>   

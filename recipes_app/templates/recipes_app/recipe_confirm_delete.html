@@ -22,11 +22,11 @@
 
 {% block content %}
 <div class="container div-delete">
-    <h5>Are you sure you want to delete the recipe named <strong> {{ recipe.recipe_name }} </strong>, this cannot be undone?</h5>
+    <h5>{% trans "Are you sure you want to delete the recipe named" %} <strong> {{ recipe.recipe_name }} </strong>, {% trans "this cannot be undone?" %}</h5>
     <form method="POST">
         {% csrf_token %}
-        <button type="submit" class="btn btn-danger">Confirm</button>
-        <button onclick="location.href='{% url 'recipes_app:detail' recipe.slug %}'" class="btn btn-warning" type="button">Cancel</button>    
+        <button type="submit" class="btn btn-danger">{% trans "Confirm" %}</button>
+        <button onclick="location.href='{% url 'recipes_app:detail' recipe.slug %}'" class="btn btn-warning" type="button">{% trans "Cancel" %}</button>    
     </form>
 </div>
 {% endblock content %}

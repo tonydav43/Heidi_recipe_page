@@ -22,7 +22,7 @@
 
 {% block content %}
 <div class="container register-h4">
-    <h4>Please complete the form to register.</h4>
+    <h4>{% trans "Please complete the form to register." %}</h4>
 </div>
 <div class="container-fluid div-register">
     <form class="form-create" method="POST">
@@ -42,8 +42,8 @@
             </p>
         {% endfor %}
         <div class="d-grid gap-2">
-            <button type="submit" class="btn btn-success">Register</button>
-            <button onclick="location.href='{% url 'home' %}'" class="btn btn-warning" type="button">Cancel</button> 
+            <button type="submit" class="btn btn-success">{% trans "Register" %}</button>
+            <button onclick="location.href='{% url 'home' %}'" class="btn btn-warning" type="button">{% trans "Cancel" %}</button> 
         </div> 
     </form>
 </div>

@@ -22,20 +22,20 @@
 
 {% block content %}
 <div class="container delete_user-h4">
-    <h4>Are you sure you want to delete the user account named <strong> {{ user.username }}? </strong></h4>
-    <h3>THIS CANNOT BE UNDONE</h3>
-    <h6>By clicking the Confirm Account Delete buttton, you will be deleting all your personal information</h6>
-    <small>Any recipes you created will NOT be deleted</small>
-    <small>If you want them deleted, then you need to email an admin by clicking the link below</small>
-    <h6><small><a class="text-dark" href="mailto:tonydav43@hotmail.co.uk?subject=Delete Recipes">Email the site admin</a></small></h6>
+    <h4>{% trans "Are you sure you want to delete the user account named" %} <strong> {{ user.username }}? </strong></h4>
+    <h3>{% trans "THIS CANNOT BE UNDONE" %}</h3>
+    <h6>{% trans "By clicking the Confirm Account Delete button, you will be deleting all your personal information" %}</h6>
+    <small>{% trans "Any recipes you created will NOT be deleted" %}</small>
+    <small>{% trans "If you want them deleted, then you need to email an admin by clicking the link below" %}</small>
+    <h6><small><a class="text-dark" href="mailto:tonydav43@hotmail.co.uk?subject=Delete Recipes">{% trans "Email the site admin" %}</a></small></h6>
 </div>
 <div class="container-fluid div-delete_user">
     {% if user.is_authenticated %}
     <form class="form-confirm-delete" method="POST">
         {% csrf_token %}
         <div class="d-grid gap-2">
-            <button type="submit" class="btn btn-danger">Confirm Account Delete</button>
-            <button onclick="location.href='{% url 'home' %}'" class="btn btn-warning" type="button">Cancel</button> 
+            <button type="submit" class="btn btn-danger">{% trans "Confirm Account Delete" %}</button>
+            <button onclick="location.href='{% url 'home' %}'" class="btn btn-warning" type="button">{% trans "Cancel" %}</button> 
         </div> 
     </form>
 </div>

@@ -28,37 +28,37 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'home' %}"><i class="fa-solid fa-house"></i> Home</a>
+                <a class="nav-link" href="{% url 'home' %}"><i class="fa-solid fa-house"></i> {% trans "Home" %} </a>
               </li>
               {% if request.user.is_authenticated %}
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'recipes_app:create' %}"><i class="fa-solid fa-utensils"></i> Create Recipe</a>
+                  <a class="nav-link" href="{% url 'recipes_app:create' %}"><i class="fa-solid fa-utensils"></i> {% trans "Create Recipe" %} </a>
                 </li>
               {% endif %}
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'recipes_app:list' %}"><i class="fa-solid fa-fish-fins"></i> View All Recipes</a>
+                <a class="nav-link" href="{% url 'recipes_app:list' %}"><i class="fa-solid fa-fish-fins"></i> {% trans "View All Recipes" %} </a>
               </li>
               <!--navbar dropdown-->
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="fa-solid fa-cake-candles"></i> Recipes By Food Group
+                  <i class="fa-solid fa-cake-candles"></i> {% trans "Recipes By Food Group" %}
                 </a>
                 <ul class="dropdown-menu scrollable-menu dropdown-small" aria-labelledby="navbarDropdown">
-                  <li class="li-drop"><a class="dropdown-item" href="{% url 'recipes_app:beef' %}">Beef</a><img src="{% static 'images/roast_beef.jpg' %}" alt="roast_beef" class="base-dropdown img-thumbnail  rounded-circle"></li>
-                  <li class="li-drop"><a class="dropdown-item" href="{% url 'recipes_app:pork' %}">Pork</a><img src="{% static 'images/roast_pork.jpg' %}" alt="roast_pork" class="base-dropdown img-thumbnail rounded-circle"></li>
-                  <li class="li-drop"><a class="dropdown-item" href="{% url 'recipes_app:lamb' %}">Lamb</a><img src="{% static 'images/rack_of_lamb.jpg' %}" alt="rack_of_lamb" class="base-dropdown img-thumbnail rounded-circle"></li>
-                  <li class="li-drop"><a class="dropdown-item" href="{% url 'recipes_app:chicken' %}">Chicken</a><img src="{% static 'images/southern_fried_chicken.jpg' %}" alt="southern_fried_chicken" class="base-dropdown img-thumbnail rounded-circle"></li>
-                  <li class="li-drop"><a class="dropdown-item" href="{% url 'recipes_app:fish' %}">Fish</a><img src="{% static 'images/fish.jpg' %}" alt="fish" class=" base-dropdown img-thumbnail rounded-circle"></li>
-                  <li class="li-drop"><a class="dropdown-item" href="{% url 'recipes_app:vegetable' %}">Vegetables</a><img src="{% static 'images/vegetable.jpg' %}" alt="vegetable" class="base-dropdown img-thumbnail rounded-circle"></li>
-                  <li class="li-drop"><a class="dropdown-item" href="{% url 'recipes_app:soup' %}">Soups</a><img src="{% static 'images/soups.jpg' %}" alt="soup" class="base-dropdown img-thumbnail rounded-circle"></li>
-                  <li class="li-drop"><a class="dropdown-item" href="{% url 'recipes_app:dessert' %}">Deserts</a><img src="{% static 'images/cherry_cream_cheese.jpg' %}" alt="cherry_cream_cheese" class="base-dropdown img-thumbnail rounded-circle"></li>
-                  <li class="li-drop"><a class="dropdown-item" href="{% url 'recipes_app:cake' %}">Cakes</a><img src="{% static 'images/cake.jpg' %}" alt="cake" class="base-dropdown img-thumbnail rounded-circle"></li>
-                  <li class="li-drop"><a class="dropdown-item" href="{% url 'recipes_app:other' %}">Others</a><img src="{% static 'images/yorkshires.jpg' %}" alt="other" class="base-dropdown img-thumbnail rounded-circle"></li>
+                  <li class="li-drop"><a class="dropdown-item" href="{% url 'recipes_app:beef' %}">{% trans "Beef" %}</a><img src="{% static 'images/roast_beef.jpg' %}" alt="roast_beef" class="base-dropdown img-thumbnail  rounded-circle"></li>
+                  <li class="li-drop"><a class="dropdown-item" href="{% url 'recipes_app:pork' %}">{% trans "Pork" %}</a><img src="{% static 'images/roast_pork.jpg' %}" alt="roast_pork" class="base-dropdown img-thumbnail rounded-circle"></li>
+                  <li class="li-drop"><a class="dropdown-item" href="{% url 'recipes_app:lamb' %}">{% trans "Lamb" %}</a><img src="{% static 'images/rack_of_lamb.jpg' %}" alt="rack_of_lamb" class="base-dropdown img-thumbnail rounded-circle"></li>
+                  <li class="li-drop"><a class="dropdown-item" href="{% url 'recipes_app:chicken' %}">{% trans "Chicken" %}</a><img src="{% static 'images/southern_fried_chicken.jpg' %}" alt="southern_fried_chicken" class="base-dropdown img-thumbnail rounded-circle"></li>
+                  <li class="li-drop"><a class="dropdown-item" href="{% url 'recipes_app:fish' %}">{% trans "Fish" %}</a><img src="{% static 'images/fish.jpg' %}" alt="fish" class=" base-dropdown img-thumbnail rounded-circle"></li>
+                  <li class="li-drop"><a class="dropdown-item" href="{% url 'recipes_app:vegetable' %}">{% trans "Vegetables" %}</a><img src="{% static 'images/vegetable.jpg' %}" alt="vegetable" class="base-dropdown img-thumbnail rounded-circle"></li>
+                  <li class="li-drop"><a class="dropdown-item" href="{% url 'recipes_app:soup' %}">{% trans "Soups" %}</a><img src="{% static 'images/soups.jpg' %}" alt="soup" class="base-dropdown img-thumbnail rounded-circle"></li>
+                  <li class="li-drop"><a class="dropdown-item" href="{% url 'recipes_app:dessert' %}">{% trans "Desserts" %}</a><img src="{% static 'images/cherry_cream_cheese.jpg' %}" alt="cherry_cream_cheese" class="base-dropdown img-thumbnail rounded-circle"></li>
+                  <li class="li-drop"><a class="dropdown-item" href="{% url 'recipes_app:cake' %}">{% trans "Cakes" %}</a><img src="{% static 'images/cake.jpg' %}" alt="cake" class="base-dropdown img-thumbnail rounded-circle"></li>
+                  <li class="li-drop"><a class="dropdown-item" href="{% url 'recipes_app:other' %}">{% trans "Others" %}</a><img src="{% static 'images/yorkshires.jpg' %}" alt="other" class="base-dropdown img-thumbnail rounded-circle"></li>
                 </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="https://www.thecalculatorsite.com/cooking/cooking-calculator.php" target="_blank">
-                  <i class="fa-solid fa-money-bill-transfer"></i> Conversion Calculator
+                  <i class="fa-solid fa-money-bill-transfer"></i> {% trans "Conversion Calculator" %}
                 </a>
               </li>
             </ul>
@@ -68,29 +68,29 @@
               <div class="search">
                 <form class="d-flex me-0" method="POST" action="{% url 'recipes_app:recipe_search' %}">
                   {% csrf_token %}
-                  <input class="form-control me-1" type="search" placeholder="Search Recipes" name="searched">
-                  <button type="submit" class="btn btn-success btn-sm"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+                  <input class="form-control me-1" type="search" placeholder={% trans "Search Recipes" %} name="searched">
+                  <button type="submit" class="btn btn-success btn-sm"><i class="fa-solid fa-magnifying-glass"></i> {% trans "Search" %}</button>
                 </form> 
               </div>
               <!--change language-->
-                  <a class="nav-link" href="{% url 'recipes_app:language' %}"><i class="fa-solid fa-globe"></i> Select Language</a>
-
+                  <a class="nav-link" href="{% url 'recipes_app:language' %}"><i class="fa-solid fa-globe"></i> {% trans "Select Language" %}</a>
+                  
               {% if request.user.is_authenticated %}
                 <li class="welcome-msg">
-                  <h6 class="nav-link">Welcome back {{ user.username }} </h6>
+                  <h6 class="nav-link">{% trans "Welcome back" %} {{ user.username }} </h6>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'account:profile' %}"><i class="fa-solid fa-user"></i> Profile</a>
+                  <a class="nav-link" href="{% url 'account:profile' %}"><i class="fa-solid fa-user"></i> {% trans "Profile" %}</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'account:logout' %}"><i class="fa-solid fa-backward"></i> Log Out</a>
+                  <a class="nav-link" href="{% url 'account:logout' %}"><i class="fa-solid fa-backward"></i> {% trans "Log Out" %}</a>
                 </li>
               {% else %}
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'account:register' %}"><i class="fa-solid fa-user-plus"></i> Register</a>
+                  <a class="nav-link" href="{% url 'account:register' %}"><i class="fa-solid fa-user-plus"></i> {% trans "Register" %}</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'account:login' %}"><i class="fa-solid fa-forward"></i></i> Log In</a>
+                  <a class="nav-link" href="{% url 'account:login' %}"><i class="fa-solid fa-forward"></i></i> {% trans "Log In" %}</a>
                 </li>
               {% endif %}
             </ul>
@@ -116,7 +116,7 @@
 
   <footer class="base-footer fixed-bottom" >
     <div class="text-center p-3">
-    © 2022 Copyright:
+    © 2022 {% trans "Copyright" %}:
         <a class="text-dark" href="mailto:tonydav43@hotmail.co.uk">tonydav43@hotmail.co.uk</a>
     </div>
   </footer>

@@ -9,7 +9,7 @@ from django.db.models import Q
 class RecipeCreateView(CreateView):
     model = Recipe
     form_class = RecipeForm
-    success_url = reverse_lazy('recipes_app:list')
+    
 
     def form_valid(self, form):
         obj = form.save(commit=False)
@@ -124,7 +124,7 @@ def recipe_search_view(request):
         return render(request, "recipes_app/recipe_search.html", {})
 
 def language_view(request):
-    template_name = 'recipes_app/language.html'
     return render(request, 'recipes_app/language.html')
+    
 
 

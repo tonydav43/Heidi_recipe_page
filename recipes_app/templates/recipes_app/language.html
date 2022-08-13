@@ -24,9 +24,9 @@
 
 {% block content %}
 <div class="container h4-language">
-  <h4>We currently only support Norwegian and English languages</h4>
-  <h4>If you wish another language to be added, please click
-    <a class="text-dark" href="mailto:tonydav43@hotmail.co.uk?subject=Language Addition">here</a> to contact us 
+  <h4>{% trans "We currently only support Norwegian and English languages" %}</h4>
+  <h4>{% trans "If you wish another language to be added, please click" %}
+    <a class="text-dark" href="mailto:tonydav43@hotmail.co.uk?subject=Language Addition">{% trans "here" %}</a> {% trans "to contact us" %} 
   </h4>
 </div>
 
@@ -46,7 +46,8 @@
           </option>
         {% endfor %}
       </select>
-    <button class="button-language btn btn-primary btn-sm" type="submit">Click to change language</button>
+    <input name="next" type="hidden" value="{% url 'home' %}">
+    <button class="button-language btn btn-primary btn-sm" type="submit">{% trans "Click to change language" %}</button>
   </div>
 </form>
 

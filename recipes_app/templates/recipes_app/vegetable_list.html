@@ -23,11 +23,11 @@
 {% block content %}
 <div class="container food-group-h4">
     {% if page_obj.paginator.count == 0 %}
-    <h4>There are no recipes in the food group vegetable.</h4>
+    <h4>{% trans "There are no recipes in the food group vegetable." %}</h4>
     {% elif page_obj.paginator.count == 1 %}
-    <h4>There is {{ page_obj.paginator.count }} recipe in the food group vegetable.</h4>
+    <h4>{% trans "There is" %} {{ page_obj.paginator.count }} {% trans "recipe in the food group vegetable." %}</h4>
     {% else %}
-    <h4>There are {{ page_obj.paginator.count }} recipes in the food group vegetable.</h4>
+    <h4>{% trans "There are" %} {{ page_obj.paginator.count }} {% trans "recipes in the food group vegetable." %}</h4>
     {% endif %}
 </div>
 
@@ -35,7 +35,7 @@
     <form class="form-food-group">
         {% for recipe in vegetable_recipe_list %}
         {% if recipe.recipe_food_group == "Vegetable" %}
-        <h6>Recipe for <strong>{{ recipe.recipe_name }}</strong> which is in the food group <strong>{{ recipe.recipe_food_group }}</strong>, click <a href="{% url 'recipes_app:detail' recipe.slug %}"><em>here </em></a>to view this recipe.</h6>
+        <h6>{% trans "Recipe for" %} <strong>{{ recipe.recipe_name }}</strong> {% trans "which is in the food group" %} <strong>{{ recipe.recipe_food_group }}</strong>, {% trans "click" %} <a href="{% url 'recipes_app:detail' recipe.slug %}"><em>{% trans "here" %} </em></a>{% trans "to view this recipe." %}</h6>
         <hr/>
         {% endif %}
         {% endfor %} 
@@ -47,17 +47,17 @@
 <div class="pagination div-paginate">
     <span class="step-links">
         {% if page_obj.has_previous %}
-            <a href="?page=1">&laquo; first</a>
-            <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+            <a href="?page=1">&laquo; {% trans "first" %}</a>
+            <a href="?page={{ page_obj.previous_page_number }}">{% trans "previous" %}</a>
         {% endif %}
 
         <span class="current">
-            Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+            {% trans "Page" %} {{ page_obj.number }} {% trans "of" %} {{ page_obj.paginator.num_pages }}.
         </span>
 
         {% if page_obj.has_next %}
-            <a href="?page={{ page_obj.next_page_number }}">next</a>
-            <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+            <a href="?page={{ page_obj.next_page_number }}">{% trans "next" %}</a>
+            <a href="?page={{ page_obj.paginator.num_pages }}">{% trans "last" %} &raquo;</a>
         {% endif %}
     </span>
 </div>

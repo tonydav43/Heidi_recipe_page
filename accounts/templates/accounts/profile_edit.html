@@ -22,7 +22,7 @@
 
 {% block content %}
 <div class="container edit-h4">
-    <h4>Here are your editable profile fields {{ user.first_name}}.</h4>
+    <h4>{% trans "Here are your editable profile fields" %} {{ user.first_name}}.</h4>
 </div>
 <div class="container-fluid div-edit">
     <form class="form-profile-edit" method="POST">
@@ -42,10 +42,10 @@
             </p>
         {% endfor %}
         <div class="d-grid gap-2">
-            <button type="submit" class="btn btn-success">Click to update your profile details</button>
-            <button onclick="location.href='{% url 'account:change_password' %}'" class="btn btn-danger" type="button">Click to change your password</button>
-            <button onclick="location.href='{% url 'account:delete_user' user.pk %}'" class="btn btn-danger" type="button">Click to delete your account</button>
-            <button onclick="location.href='{% url 'home' %}'" class="btn btn-warning" type="button">Cancel</button> 
+            <button type="submit" class="btn btn-success">{% trans "Click to update your profile details" %}</button>
+            <button onclick="location.href='{% url 'account:change_password' %}'" class="btn btn-danger" type="button">{% trans "Click to change your password" %}</button>
+            <button onclick="location.href='{% url 'account:delete_user' user.pk %}'" class="btn btn-danger" type="button">{% trans "Click to delete your account" %}</button>
+            <button onclick="location.href='{% url 'home' %}'" class="btn btn-warning" type="button">{% trans "Cancel" %}</button> 
         </div> 
     </form>
 </div>
