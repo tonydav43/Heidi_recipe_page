@@ -5,6 +5,8 @@ from django.urls import reverse_lazy
 from django.contrib.auth import update_session_auth_hash
 from .models import Account
 from django.views.generic import DeleteView
+from django.utils.translation import gettext_lazy as _
+
 
 def login_view(request):
     if request.method == "POST":
@@ -12,7 +14,7 @@ def login_view(request):
         password = request.POST.get("password")
         user = authenticate(request, email=email, password=password)
         if user is None:
-            context = { "error": "You have either entered the wrong credentials or you are not a registered user, please either login or register"}
+            context = { "error": _("You have either entered the wrong credentials or you are not a registered user, please either login or register")}
             return render(request, "accounts/login.html",context)
         login(request, user)
         return redirect("/")

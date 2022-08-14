@@ -569,30 +569,37 @@ msgid "Recipes By Food Group"
 msgstr "Oppskrifter etter matgruppe"
 
 #: .\templates\base.html:47
+#: .\recipes_app\models.py:24
 msgid "Beef"
 msgstr "Storfekjøtt"
 
 #: .\templates\base.html:48
+#: .\recipes_app\models.py:25
 msgid "Pork"
 msgstr "Svinekjøtt"
 
 #: .\templates\base.html:49
+#: .\recipes_app\models.py:26
 msgid "Lamb"
 msgstr "lam"
 
 #: .\templates\base.html:50
+#: .\recipes_app\models.py:27
 msgid "Chicken"
 msgstr "Kylling"
 
 #: .\templates\base.html:51
+#: .\recipes_app\models.py:28
 msgid "Fish"
 msgstr "Fisk"
 
 #: .\templates\base.html:52
+#: .\recipes_app\models.py:29
 msgid "Vegetables"
 msgstr "Grønnsaker"
 
 #: .\templates\base.html:53
+#: .\recipes_app\models.py:30
 msgid "Soups"
 msgstr "Supper"
 
@@ -601,6 +608,7 @@ msgid "Desserts"
 msgstr "Desserter"
 
 #: .\templates\base.html:55
+#: .\recipes_app\models.py:32
 msgid "Cakes"
 msgstr "Kaker"
 
@@ -812,3 +820,133 @@ msgstr "Vennligst skriv inn ditt nåværende passord"
 msgid "Please re-enter your new password"
 msgstr "Vennligst skriv inn ditt nye passord på nytt"
 
+#: .\accounts\views.py:78
+msgid "You have either entered the wrong credentials or you are not a registered user, please either login or register"
+msgstr "Du har enten skrevet inn feil legitimasjon eller du er ikke en registrert bruker, vennligst logg inn eller registrer deg"
+
+#: .\accounts\models.py:10
+msgid "Users must have an email address"
+msgstr "Brukere må ha en e-postadresse"
+
+#: .\accounts\models.py:12
+msgid "Users must have an username"
+msgstr "Brukere må ha et brukernavn"
+
+#: .\accounts\models.py:14
+msgid "Users must have a first name"
+msgstr "Brukere må ha et fornavn"
+
+#: .\accounts\models.py:16
+msgid "Users must have a last name"
+msgstr "Brukere må ha et etternavn"
+
+#: .\recipes_app\forms.py:12
+#: .\recipes_app\forms.py:41
+msgid "Recipe Name"
+msgstr "Navn på oppskriften"
+
+#: .\recipes_app\forms.py:13
+#: .\recipes_app\forms.py:42
+msgid "Recipe Country"
+msgstr "Oppskriftsland"
+
+#: .\recipes_app\forms.py:14
+#: .\recipes_app\forms.py:43
+msgid "Recipe Food Group"
+msgstr "Oppskrift Matgruppe"
+
+#: .\recipes_app\forms.py:15
+#: .\recipes_app\forms.py:44
+msgid "Recipe Ingredients"
+msgstr "Oppskrift Ingredienser"
+
+#: .\recipes_app\forms.py:16
+#: .\recipes_app\forms.py:45
+msgid "Recipe Instructions"
+msgstr "Oppskriftsinstruksjoner"
+
+#: .\recipes_app\forms.py:17
+#: .\recipes_app\forms.py:46
+msgid "Recipe Notes"
+msgstr "Oppskriftsnotater"
+
+#: .\recipes_app\forms.py:18
+#: .\recipes_app\forms.py:47
+msgid "Recipe Image"
+msgstr "Oppskriftsbilde"
+
+#: .\recipes_app\forms.py:59
+msgid "Update the recipe name here."
+msgstr "Oppdater oppskriftsnavnet her."
+
+#: .\recipes_app\forms.py:60
+msgid "Update the country here."
+msgstr "Oppdater landet her."
+
+#: .\recipes_app\forms.py:61
+msgid "Update the recipe food group here."
+msgstr "Oppdater oppskriftsmatgruppen her."
+
+#: .\recipes_app\forms.py:62
+msgid "Update the recipe ingredients here."
+msgstr "Oppdater oppskriftens ingredienser her."
+
+#: .\recipes_app\forms.py:63
+msgid "Update the ingredient instructions here."
+msgstr "Oppdater ingrediensinstruksjonene her."
+
+#: .\recipes_app\forms.py:64
+msgid "Update the recipe notes here."
+msgstr "Oppdater oppskriftsnotatene her."
+
+#: .\recipes_app\forms.py:65
+msgid "Update or clear the recipe image here."
+msgstr "Oppdater eller slett oppskriftsbildet her."
+
+#: .\recipes_app\models.py:17
+msgid "Max file size is %sMB, please choose a smaller image"
+msgstr "Maksimal filstørrelse er %sMB. Velg et mindre bilde"
+
+#: .\recipes_app\models.py:31
+msgid "Dessert"
+msgstr "Dessert"
+
+#: .\recipes_app\models.py:33
+msgid "Other"
+msgstr "Annen"
+
+#: .\recipes_app\models.py:35
+msgid "Please enter a recipe name"
+msgstr "Vennligst skriv inn et oppskriftsnavn"
+
+#: .\recipes_app\models.py:36
+msgid "Please select a country"
+msgstr "Velg et land"
+
+#: .\recipes_app\models.py:36
+msgid "No country selected"
+msgstr "Ingen land er valgt"
+
+#: .\recipes_app\models.py:37
+msgid "Please select the food group from the dropdown menu"
+msgstr "Velg matvaregruppen fra rullegardinmenyen"
+
+#: .\recipes_app\models.py:38
+msgid "Please enter the ingredients and quantities to be used"
+msgstr "Vennligst skriv inn ingrediensene og mengden som skal brukes"
+
+#: .\recipes_app\models.py:39
+msgid "Please enter the instructions for the recipe"
+msgstr "Vennligst skriv inn instruksjonene for oppskriften"
+
+#: .\recipes_app\models.py:40
+msgid "Please enter any notes for the recipe"
+msgstr "Skriv inn eventuelle merknader til oppskriften"
+
+#: .\recipes_app\models.py:40
+msgid "There are currently no notes associated with this recipe"
+msgstr "Det er for øyeblikket ingen notater knyttet til denne oppskriften"
+
+#: .\recipes_app\models.py:41
+msgid "Please upload an image, a default image will be used if none selected"
+msgstr "Last opp et bilde, et standardbilde vil bli brukt hvis ingen er valgt"
