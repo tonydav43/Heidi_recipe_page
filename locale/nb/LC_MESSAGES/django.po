@@ -339,16 +339,16 @@ msgid "last"
 msgstr "siste"
 
 #: .\recipes_app\templates\recipes_app\cake_list.html:26
-msgid "There are no recipes in the food group cake."
-msgstr "Det er ingen oppskrifter i matgruppekaken."
+msgid "There are no recipes in the food group cakes."
+msgstr "Det er ingen oppskrifter i matgruppen kaker."
 
 #: .\recipes_app\templates\recipes_app\cake_list.html:28
-msgid "recipe in the food group cake."
-msgstr "oppskrift i matgruppen kake."
+msgid "recipe in the food group cakes."
+msgstr "oppskrift i matgruppen kaker."
 
-#: .\recipes_app\templates\recipes_app\cake_list.html:30
+#: .\recipes_app\templates\recipes_app\cakes_list.html:30
 msgid "recipes in the food group cake."
-msgstr "oppskrifter i matgruppen kake."
+msgstr "oppskrifter i matgruppen kaker."
 
 #: .\recipes_app\templates\recipes_app\chicken_list.html:26
 msgid "There are no recipes in the food group chicken."
@@ -415,15 +415,15 @@ msgid "Click to change language"
 msgstr "Klikk for å endre språk"
 
 #: .\recipes_app\templates\recipes_app\other_list.html:26
-msgid "There are no recipes in the food group other."
-msgstr "Det er ingen oppskrifter i matgruppen annet."
+msgid "There are no recipes in the food group others."
+msgstr "Det er ingen oppskrifter i matgruppen andre."
 
 #: .\recipes_app\templates\recipes_app\other_list.html:28
-msgid "recipe in the food group other."
-msgstr "oppskrift i matvaregruppen annet."
+msgid "recipe in the food group others."
+msgstr "oppskrift i matvaregruppen andre."
 
 #: .\recipes_app\templates\recipes_app\other_list.html:30
-msgid "recipes in the food group other."
+msgid "recipes in the food group others."
 msgstr "oppskrifter i matvaregruppen andre."
 
 #: .\recipes_app\templates\recipes_app\pork_list.html:26
@@ -533,28 +533,28 @@ msgid "Please edit the form to update your recipe."
 msgstr "Rediger skjemaet for å oppdatere oppskriften din."
 
 #: .\recipes_app\templates\recipes_app\soup_list.html:26
-msgid "There are no recipes in the food group soup."
-msgstr "Det er ingen oppskrifter i matvaregruppen suppe."
+msgid "There are no recipes in the food group soups."
+msgstr "Det er ingen oppskrifter i matvaregruppen supper."
 
 #: .\recipes_app\templates\recipes_app\soup_list.html:28
-msgid "recipe in the food group soup."
-msgstr "oppskrift i matgruppen suppe."
+msgid "recipe in the food group soups."
+msgstr "oppskrift i matgruppen supper."
 
 #: .\recipes_app\templates\recipes_app\soup_list.html:30
-msgid "recipes in the food group soup."
-msgstr "oppskrifter i matgruppen suppe."
+msgid "recipes in the food group soups."
+msgstr "oppskrifter i matgruppen supper."
 
 #: .\recipes_app\templates\recipes_app\vegetable_list.html:26
-msgid "There are no recipes in the food group vegetable."
-msgstr "Det er ingen oppskrifter i matvaregruppen grønnsak."
+msgid "There are no recipes in the food group vegetables."
+msgstr "Det er ingen oppskrifter i matvaregruppen Grønnsaker."
 
 #: .\recipes_app\templates\recipes_app\vegetable_list.html:28
-msgid "recipe in the food group vegetable."
-msgstr "oppskrift i matgruppen grønnsak."
+msgid "recipe in the food group vegetables."
+msgstr "oppskrift i matgruppen Grønnsaker."
 
 #: .\recipes_app\templates\recipes_app\vegetable_list.html:30
-msgid "recipes in the food group vegetable."
-msgstr "oppskrifter i matgruppen grønnsak."
+msgid "recipes in the food group vegetables."
+msgstr "oppskrifter i matgruppen Grønnsaker."
 
 #: .\templates\base.html:31
 msgid "Home"
@@ -581,7 +581,7 @@ msgstr "Svinekjøtt"
 #: .\templates\base.html:49
 #: .\recipes_app\models.py:26
 msgid "Lamb"
-msgstr "lam"
+msgstr "Lam"
 
 #: .\templates\base.html:50
 #: .\recipes_app\models.py:27
@@ -604,6 +604,7 @@ msgid "Soups"
 msgstr "Supper"
 
 #: .\templates\base.html:54
+#: .\recipes_app\models.py:31
 msgid "Desserts"
 msgstr "Desserter"
 
@@ -613,6 +614,7 @@ msgid "Cakes"
 msgstr "Kaker"
 
 #: .\templates\base.html:56
+#: .\recipes_app\models.py:33
 msgid "Others"
 msgstr "Andre"
 
@@ -840,80 +842,76 @@ msgstr "Brukere må ha et fornavn"
 msgid "Users must have a last name"
 msgstr "Brukere må ha et etternavn"
 
-#: .\recipes_app\forms.py:12
-#: .\recipes_app\forms.py:41
+#: .\recipes_app\forms.py:13
+#: .\recipes_app\forms.py:42
 msgid "Recipe Name"
 msgstr "Navn på oppskriften"
 
-#: .\recipes_app\forms.py:13
-#: .\recipes_app\forms.py:42
+#: .\recipes_app\forms.py:14
+#: .\recipes_app\forms.py:43
 msgid "Recipe Country"
 msgstr "Oppskriftsland"
 
-#: .\recipes_app\forms.py:14
-#: .\recipes_app\forms.py:43
+#: .\recipes_app\forms.py:15
+#: .\recipes_app\forms.py:44
 msgid "Recipe Food Group"
 msgstr "Oppskrift Matgruppe"
 
-#: .\recipes_app\forms.py:15
-#: .\recipes_app\forms.py:44
+#: .\recipes_app\forms.py:16
+#: .\recipes_app\forms.py:45
 msgid "Recipe Ingredients"
 msgstr "Oppskrift Ingredienser"
 
-#: .\recipes_app\forms.py:16
-#: .\recipes_app\forms.py:45
+#: .\recipes_app\forms.py:17
+#: .\recipes_app\forms.py:46
 msgid "Recipe Instructions"
 msgstr "Oppskriftsinstruksjoner"
 
-#: .\recipes_app\forms.py:17
-#: .\recipes_app\forms.py:46
+#: .\recipes_app\forms.py:18
+#: .\recipes_app\forms.py:47
 msgid "Recipe Notes"
 msgstr "Oppskriftsnotater"
 
-#: .\recipes_app\forms.py:18
-#: .\recipes_app\forms.py:47
+#: .\recipes_app\forms.py:19
+#: .\recipes_app\forms.py:48
 msgid "Recipe Image"
 msgstr "Oppskriftsbilde"
 
-#: .\recipes_app\forms.py:59
+#: .\recipes_app\forms.py:62
 msgid "Update the recipe name here."
 msgstr "Oppdater oppskriftsnavnet her."
 
-#: .\recipes_app\forms.py:60
+#: .\recipes_app\forms.py:63
 msgid "Update the country here."
 msgstr "Oppdater landet her."
 
-#: .\recipes_app\forms.py:61
+#: .\recipes_app\forms.py:64
 msgid "Update the recipe food group here."
 msgstr "Oppdater oppskriftsmatgruppen her."
 
-#: .\recipes_app\forms.py:62
+#: .\recipes_app\forms.py:65
 msgid "Update the recipe ingredients here."
 msgstr "Oppdater oppskriftens ingredienser her."
 
-#: .\recipes_app\forms.py:63
+#: .\recipes_app\forms.py:66
 msgid "Update the ingredient instructions here."
 msgstr "Oppdater ingrediensinstruksjonene her."
 
-#: .\recipes_app\forms.py:64
+#: .\recipes_app\forms.py:67
 msgid "Update the recipe notes here."
 msgstr "Oppdater oppskriftsnotatene her."
 
-#: .\recipes_app\forms.py:65
-msgid "Update or clear the recipe image here."
-msgstr "Oppdater eller slett oppskriftsbildet her."
+#: .\recipes_app\forms.py:68
+msgid "Update the recipe image here."
+msgstr "Oppdater oppskriftsbildet her."
 
+#: .\recipes_app\forms.py:75
+msgid "Choose a file to change the current image"
+msgstr "Velg en fil for å endre gjeldende bilde"
+ee
 #: .\recipes_app\models.py:17
 msgid "Max file size is %sMB, please choose a smaller image"
 msgstr "Maksimal filstørrelse er %sMB. Velg et mindre bilde"
-
-#: .\recipes_app\models.py:31
-msgid "Dessert"
-msgstr "Dessert"
-
-#: .\recipes_app\models.py:33
-msgid "Other"
-msgstr "Annen"
 
 #: .\recipes_app\models.py:35
 msgid "Please enter a recipe name"

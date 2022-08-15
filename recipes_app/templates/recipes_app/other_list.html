@@ -23,18 +23,18 @@
 {% block content %}
 <div class="container food-group-h4">
     {% if page_obj.paginator.count == 0 %}
-    <h4>{% trans "There are no recipes in the food group other." %}</h4>
+    <h4>{% trans "There are no recipes in the food group others." %}</h4>
     {% elif page_obj.paginator.count == 1 %}
-    <h4>{% trans "There is" %} {{ page_obj.paginator.count }} {% trans "recipe in the food group other." %}</h4>
+    <h4>{% trans "There is" %} {{ page_obj.paginator.count }} {% trans "recipe in the food group others." %}</h4>
     {% else %}
-    <h4>{% trans "There are" %} {{ page_obj.paginator.count }} {% trans "recipes in the food group other." %}</h4>
+    <h4>{% trans "There are" %} {{ page_obj.paginator.count }} {% trans "recipes in the food group others." %}</h4>
     {% endif %}
 </div>
 
 <div class="container div-list">
     <form class="form-food-group">
         {% for recipe in other_recipe_list %}
-        {% if recipe.recipe_food_group == "Other" %}
+        {% if recipe.recipe_food_group == "Others" %}
         <h6>{% trans "Recipe for" %} <strong>{{ recipe.recipe_name }}</strong> {% trans "which is in the food group" %} <strong>{{ recipe.recipe_food_group }}</strong>, {% trans "click" %} <a href="{% url 'recipes_app:detail' recipe.slug %}"><em>{% trans "here" %} </em></a>{% trans "to view this recipe." %}</h6>
         <hr/>
         {% endif %}

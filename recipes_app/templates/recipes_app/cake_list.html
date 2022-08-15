@@ -23,11 +23,11 @@
 {% block content %}
 <div class="container food-group-h4">
     {% if page_obj.paginator.count == 0 %}
-    <h4>{% trans "There are no recipes in the food group cake." %}</h4>
+    <h4>{% trans "There are no recipes in the food group cakes." %}</h4>
     {% elif page_obj.paginator.count == 1 %}
-    <h4>{% trans "There is" %} {{ page_obj.paginator.count }} {% trans "recipe in the food group cake." %}</h4>
+    <h4>{% trans "There is" %} {{ page_obj.paginator.count }} {% trans "recipe in the food group cakes." %}</h4>
     {% else %}
-    <h4>{% trans "There are" %} {{ page_obj.paginator.count }} {% trans "recipes in the food group cake." %}</h4>
+    <h4>{% trans "There are" %} {{ page_obj.paginator.count }} {% trans "recipes in the food group cakes." %}</h4>
     {% endif %}
 </div>
 

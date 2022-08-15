@@ -46,7 +46,7 @@
           </option>
         {% endfor %}
       </select>
-    <input name="next" type="hidden" value="{% url 'home' %}">
+    <input type="hidden" name="next" value="{{request.META.HTTP_REFERER|escape }}"> 
     <button class="button-language btn btn-primary btn-sm" type="submit">{% trans "Click to change language" %}</button>
   </div>
 </form>

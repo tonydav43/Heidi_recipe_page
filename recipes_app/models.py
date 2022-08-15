@@ -26,11 +26,11 @@ class Recipe(models.Model):
         (_("Lamb"), _("Lamb")),
         (_("Chicken"), _("Chicken")),
         (_("Fish"), _("Fish")),
-        (_("Vegetable"), _("Vegetable")),
-        (_("Soup"), _("Soup")),
-        (_("Dessert"), _("Dessert")),
-        (_("Cake"), _("Cake")),
-        (_("Other"), _("Other")),
+        (_("Vegetables"), _("Vegetables")),
+        (_("Soups"), _("Soups")),
+        (_("Desserts"), _("Desserts")),
+        (_("Cakes"), _("Cakes")),
+        (_("Others"), _("Others")),
     )
     recipe_name = models.CharField("Recipe Name", max_length=150, help_text=_("Please enter a recipe name"))
     recipe_country = CountryField("Country", help_text=_("Please select a country"), default= _("No country selected"))
@@ -56,6 +56,6 @@ class Recipe(models.Model):
         return super(Recipe, self).save(*args, **kwargs) 
     
     def __str__(self):
-        return f"The author of this recipe is) {self.author}"
+        return f"The author of this recipe is {self.author}"
 
 
