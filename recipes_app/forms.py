@@ -26,11 +26,8 @@ class RecipeForm(forms.ModelForm):
             'recipe_ingredients': forms.Textarea(attrs={'class': "form-label", 'class': "form-control"}),
             'recipe_instructions': forms.Textarea(attrs={'class': "form-label", 'class': "form-control"}),
             'recipe_notes': forms.Textarea(attrs={'class': "form-label", 'class': "form-control"}),
+            'recipe_image': forms.FileInput(attrs={'class': "form-label", 'class': "form-control"}),
         }
-
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.fields['recipe_image'].widget.attrs.update({'class': "form-label", 'class': "form-control"})
 
 class RecipeUpdateForm(forms.ModelForm):
     class Meta:
@@ -45,7 +42,7 @@ class RecipeUpdateForm(forms.ModelForm):
             'recipe_ingredients': _("Recipe Ingredients"),
             'recipe_instructions': _("Recipe Instructions"),
             'recipe_notes': _("Recipe Notes"),
-            'recipe_image': _("Recipe Image"),      
+            'recipe_image': _("Recipe Image"), 
         }
         
         widgets = {
@@ -55,7 +52,7 @@ class RecipeUpdateForm(forms.ModelForm):
             'recipe_ingredients': forms.Textarea(attrs={'class': "form-label", 'class': "form-control"}),
             'recipe_instructions': forms.Textarea(attrs={'class': "form-label", 'class': "form-control"}),
             'recipe_notes': forms.Textarea(attrs={'class': "form-label", 'class': "form-control"}),
-            'recipe_image': forms.FileInput,
+            'recipe_image': forms.FileInput(attrs={'class': "form-label", 'class': "form-control"}), # if you remove this the checkbox comes back
         }
 
         help_texts = {
@@ -67,14 +64,10 @@ class RecipeUpdateForm(forms.ModelForm):
             'recipe_notes': _("Update the recipe notes here."),
             'recipe_image': _("Update the recipe image here."),
         }
+ 
+        # def __init__(self, *args, **kwargs):
+        #     super().__init__(*args, **kwargs)
+        #     self.fields['recipe_image'].widget.attrs.update({'class': "form-label", 'class': "form-control"})
+        #     self.fields['recipe_image'].widget.recipe_image_clear_id = "Help"
+        #     self.fields['recipe_image'].widget.input_text = _("Choose a file to change the current image") 
 
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.fields['recipe_image'].widget.attrs.update({'class': "form-label", 'class': "form-control"})
-        self.fields['recipe_image'].widget.clear_checkbox_label = ""
-        self.fields['recipe_image'].widget.input_text = _("Choose a file to change the current image")
-
-        
-
-       
-        

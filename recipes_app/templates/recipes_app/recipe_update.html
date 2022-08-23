@@ -28,6 +28,9 @@
     <form class="form-recipe-create" enctype='multipart/form-data' method="POST">
         {% csrf_token %}
         {{ form.as_p }}
+        <small>{% trans "Current recipe image is:" %} {{ recipe.recipe_image }}</small>
+        <br>
+        <br>
     <div class="d-grid gap-2">
         <button type="submit" class="btn btn-success">{% trans "Update Recipe" %}</button>
         <button onclick="location.href='{% url 'recipes_app:detail' recipe.slug %}'" class="btn btn-warning" type="button">{% trans "Cancel" %}</button>    

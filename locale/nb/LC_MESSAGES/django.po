@@ -905,10 +905,6 @@ msgstr "Oppdater oppskriftsnotatene her."
 msgid "Update the recipe image here."
 msgstr "Oppdater oppskriftsbildet her."
 
-#: .\recipes_app\forms.py:75
-msgid "Choose a file to change the current image"
-msgstr "Velg en fil for å endre gjeldende bilde"
-ee
 #: .\recipes_app\models.py:17
 msgid "Max file size is %sMB, please choose a smaller image"
 msgstr "Maksimal filstørrelse er %sMB. Velg et mindre bilde"
@@ -948,3 +944,7 @@ msgstr "Det er for øyeblikket ingen notater knyttet til denne oppskriften"
 #: .\recipes_app\models.py:41
 msgid "Please upload an image, a default image will be used if none selected"
 msgstr "Last opp et bilde, et standardbilde vil bli brukt hvis ingen er valgt"
+
+#: .\recipes_app\templates\recipes_app\recipe_update.html:31
+msgid "Current recipe image is:"
+msgstr "Nåværende oppskriftsbilde er:"
