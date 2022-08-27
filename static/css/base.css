@@ -3,6 +3,12 @@ body {
     padding-bottom: 60px;
 }
 
+.navbar {
+    width:100%;
+    float:none;
+    position:relative;
+}
+
 .base-dropdown { 
     height:50%;
     width:50%;
@@ -21,7 +27,7 @@ body {
 
 .scrollable-menu {
     height: auto;
-    max-height: 750px;
+    max-height: 500px;
     overflow-y:scroll;
 }
 

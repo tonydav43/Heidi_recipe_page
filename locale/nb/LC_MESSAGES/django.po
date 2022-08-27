@@ -754,7 +754,7 @@ msgid "Last Name"
 msgstr "Etternavn"
 
 #: .\accounts\forms.py:14
-msgid "Userrname"
+msgid "Username"
 msgstr "Brukernavn"
 
 #: .\accounts\forms.py:15
