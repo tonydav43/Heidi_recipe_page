@@ -27,8 +27,8 @@ msgid "THIS CANNOT BE UNDONE"
 msgstr "DETTE KAN IKKE ANGRES"
 
 #: .\accounts\templates\accounts\account_confirm_delete.html:27
-msgid "By clicking the Confirm Account Delete buttton, you will be deleting all your personal information"
-msgstr "Ved å klikke på knappen Bekreft sletting av konto, vil du slette all din personlige informasjon"
+msgid "By clicking the Confirm Account Delete button, you will be deleting all your personal information"
+msgstr "Ved å klikke på delete tasten, vil du slette all din personlige informasjon"
 
 #: .\accounts\templates\accounts\account_confirm_delete.html:28
 msgid "Any recipes you created will NOT be deleted"
@@ -94,19 +94,19 @@ msgstr "Her er profilen din"
 
 #: .\accounts\templates\accounts\profile.html:29
 msgid "Your first name is:"
-msgstr "Fornavnet ditt er:"
+msgstr "Ditt fornavn:"
 
 #: .\accounts\templates\accounts\profile.html:30
 msgid "Your last name is:"
-msgstr "Etternavnet ditt er:"
+msgstr "Ditt etternavn:"
 
 #: .\accounts\templates\accounts\profile.html:31
 msgid "Your username is:"
-msgstr "Brukernavnet ditt er:"
+msgstr "Ditt brukernavn:"
 
 #: .\accounts\templates\accounts\profile.html:32
 msgid "Your email address is:"
-msgstr "Din e-postadresse er:"
+msgstr "Din e-postadresse:"
 
 #: .\accounts\templates\accounts\profile.html:35
 msgid "Update Your Profile Details"
@@ -114,7 +114,7 @@ msgstr "Oppdater profildetaljer"
 
 #: .\accounts\templates\accounts\profile_edit.html:25
 msgid "Here are your editable profile fields"
-msgstr "Her er de redigerbare profilfeltene dine"
+msgstr "Her kan du endre din profil"
 
 #: .\accounts\templates\accounts\profile_edit.html:45
 msgid "Click to update your profile details"
@@ -134,7 +134,7 @@ msgstr "Registrere"
 
 #: .\recipes_app\templates\recipes_app\beef_list.html:26
 msgid "There are no recipes in the food group beef."
-msgstr "Det er ingen oppskrifter i matgruppen storfekjøtt."
+msgstr "Det finnes ingen oppskrifter i matvaregruppen storfekjøtt."
 
 #: .\recipes_app\templates\recipes_app\beef_list.html:28
 #: .\recipes_app\templates\recipes_app\cake_list.html:28
@@ -152,7 +152,7 @@ msgstr "Det er"
 
 #: .\recipes_app\templates\recipes_app\beef_list.html:28
 msgid "recipe in the food group beef."
-msgstr "oppskrift i matgruppen biff."
+msgstr "oppskrift i matvaregruppen biff."
 
 #: .\recipes_app\templates\recipes_app\beef_list.html:30
 #: .\recipes_app\templates\recipes_app\cake_list.html:30
@@ -170,7 +170,7 @@ msgstr "Det er"
 
 #: .\recipes_app\templates\recipes_app\beef_list.html:30
 msgid "recipes in the food group beef."
-msgstr "oppskrifter i matgruppen storfekjøtt."
+msgstr "oppskrifter i matvaregruppen storfekjøtt."
 
 #: .\recipes_app\templates\recipes_app\beef_list.html:38
 #: .\recipes_app\templates\recipes_app\cake_list.html:38
@@ -340,67 +340,67 @@ msgstr "siste"
 
 #: .\recipes_app\templates\recipes_app\cake_list.html:26
 msgid "There are no recipes in the food group cakes."
-msgstr "Det er ingen oppskrifter i matgruppen kaker."
+msgstr "Det finnes ingen oppskrifter i matvaregruppen kaker."
 
 #: .\recipes_app\templates\recipes_app\cake_list.html:28
 msgid "recipe in the food group cakes."
-msgstr "oppskrift i matgruppen kaker."
+msgstr "oppskrift i matvaregruppen kaker."
 
 #: .\recipes_app\templates\recipes_app\cakes_list.html:30
 msgid "recipes in the food group cake."
-msgstr "oppskrifter i matgruppen kaker."
+msgstr "oppskrifter i matvaregruppen kaker."
 
 #: .\recipes_app\templates\recipes_app\chicken_list.html:26
 msgid "There are no recipes in the food group chicken."
-msgstr "Det er ingen oppskrifter i matgruppen kylling."
+msgstr "Det finnes ingen oppskrifter i matvaregruppen kylling."
 
 #: .\recipes_app\templates\recipes_app\chicken_list.html:28
 msgid "recipe in the food group chicken."
-msgstr "oppskrift i matgruppen kylling."
+msgstr "oppskrift i matvaregruppen kylling."
 
 #: .\recipes_app\templates\recipes_app\chicken_list.html:30
 msgid "recipes in the food group chicken."
-msgstr "oppskrifter i matgruppen kylling."
+msgstr "oppskrifter i matvaregruppen kylling."
 
 #: .\recipes_app\templates\recipes_app\dessert_list.html:26
 msgid "There are no recipes in the food group desserts."
-msgstr "Det er ingen oppskrifter i matgruppen desserter."
+msgstr "Det finnes ingen oppskrifter i matvaregruppen desserter."
 
 #: .\recipes_app\templates\recipes_app\dessert_list.html:28
 msgid "recipe in the food group desserts."
-msgstr "oppskrift i matgruppen desserter."
+msgstr "oppskrift i matvaregruppen desserter."
 
 #: .\recipes_app\templates\recipes_app\dessert_list.html:30
 msgid "recipes in the food group desserts."
-msgstr "oppskrifter i matgruppen desserter."
+msgstr "oppskrifter i matvaregruppen desserter."
 
 #: .\recipes_app\templates\recipes_app\fish_list.html:26
 msgid "There are no recipes in the food group fish."
-msgstr "Det finnes ingen oppskrifter i matgruppen fisk."
+msgstr "Det finnes ingen oppskrifter i matvaregruppen fisk."
 
 #: .\recipes_app\templates\recipes_app\fish_list.html:28
 msgid "recipe in the food group fish."
-msgstr "oppskrift i matgruppen fisk."
+msgstr "oppskrift i matvaregruppen fisk."
 
 #: .\recipes_app\templates\recipes_app\fish_list.html:30
 msgid "recipes in the food group fish."
-msgstr "oppskrifter i matgruppen fisk."
+msgstr "oppskrifter i matvaregruppen fisk."
 
 #: .\recipes_app\templates\recipes_app\lamb_list.html:26
 msgid "There are no recipes in the food group lamb."
-msgstr "Det er ingen oppskrifter i matgruppen lam."
+msgstr "Det finnes ingen oppskrifter i matvaregruppen lam."
 
 #: .\recipes_app\templates\recipes_app\lamb_list.html:28
 msgid "recipe in the food group lamb."
-msgstr "oppskrift i matgruppen lam."
+msgstr "oppskrift i matvaregruppen lam."
 
 #: .\recipes_app\templates\recipes_app\lamb_list.html:30
 msgid "recipes in the food group lamb."
-msgstr "oppskrifter i matgruppen lam."
+msgstr "oppskrifter i matvaregruppen lam."
 
 #: .\recipes_app\templates\recipes_app\language.html:27
 msgid "We currently only support Norwegian and English languages"
-msgstr "Vi støtter foreløpig kun norsk og engelsk språk"
+msgstr "Vi har foreløpig kun norsk og engelsk språk"
 
 #: .\recipes_app\templates\recipes_app\language.html:28
 msgid "If you wish another language to be added, please click"
@@ -408,7 +408,7 @@ msgstr "Hvis du ønsker at et annet språk skal legges til, vennligst klikk"
 
 #: .\recipes_app\templates\recipes_app\language.html:29
 msgid "to contact us"
-msgstr "å kontakte oss"
+msgstr "for å kontakte oss"
 
 #: .\recipes_app\templates\recipes_app\language.html:50
 msgid "Click to change language"
@@ -416,7 +416,7 @@ msgstr "Klikk for å endre språk"
 
 #: .\recipes_app\templates\recipes_app\other_list.html:26
 msgid "There are no recipes in the food group others."
-msgstr "Det er ingen oppskrifter i matgruppen andre."
+msgstr "Det finnes ingen oppskrifter i matvaregruppen andre."
 
 #: .\recipes_app\templates\recipes_app\other_list.html:28
 msgid "recipe in the food group others."
@@ -428,15 +428,15 @@ msgstr "oppskrifter i matvaregruppen andre."
 
 #: .\recipes_app\templates\recipes_app\pork_list.html:26
 msgid "There are no recipes in the food group pork."
-msgstr "Det er ingen oppskrifter i matgruppen svinekjøtt."
+msgstr "Det finnes ingen oppskrifter i matvaregruppen svinekjøtt."
 
 #: .\recipes_app\templates\recipes_app\pork_list.html:28
 msgid "recipe in the food group pork."
-msgstr "oppskrift i matgruppen svinekjøtt."
+msgstr "oppskrift i matvaregruppen svinekjøtt."
 
 #: .\recipes_app\templates\recipes_app\pork_list.html:30
 msgid "recipes in the food group pork."
-msgstr "oppskrifter i matgruppen svinekjøtt."
+msgstr "oppskrifter i matvaregruppen svinekjøtt."
 
 #: .\recipes_app\templates\recipes_app\recipe_confirm_delete.html:25
 msgid "Are you sure you want to delete the recipe named"
@@ -493,7 +493,7 @@ msgstr "Slett oppskrift"
 
 #: .\recipes_app\templates\recipes_app\recipe_form.html:25
 msgid "Please complete the form to create your recipe."
-msgstr "Fyll ut skjemaet for å lage din oppskrift."
+msgstr "Fyll ut skjemaet for å lage din egen oppskrift."
 
 #: .\recipes_app\templates\recipes_app\recipe_form.html:32
 #: .\templates\base.html:35
@@ -502,7 +502,7 @@ msgstr "Lag oppskrift"
 
 #: .\recipes_app\templates\recipes_app\recipe_list.html:26
 msgid "There are no recipes currently on this website."
-msgstr "Det er ingen oppskrifter på denne nettsiden for øyeblikket."
+msgstr "Det finnes ingen oppskrifter på denne nettsiden for øyeblikket."
 
 #: .\recipes_app\templates\recipes_app\recipe_list.html:28
 msgid "recipe on this website."
@@ -534,27 +534,27 @@ msgstr "Rediger skjemaet for å oppdatere oppskriften din."
 
 #: .\recipes_app\templates\recipes_app\soup_list.html:26
 msgid "There are no recipes in the food group soups."
-msgstr "Det er ingen oppskrifter i matvaregruppen supper."
+msgstr "Det finnes ingen oppskrifter i matvaregruppen supper."
 
 #: .\recipes_app\templates\recipes_app\soup_list.html:28
 msgid "recipe in the food group soups."
-msgstr "oppskrift i matgruppen supper."
+msgstr "oppskrift i matvaregruppen supper."
 
 #: .\recipes_app\templates\recipes_app\soup_list.html:30
 msgid "recipes in the food group soups."
-msgstr "oppskrifter i matgruppen supper."
+msgstr "oppskrifter i matvaregruppen supper."
 
 #: .\recipes_app\templates\recipes_app\vegetable_list.html:26
 msgid "There are no recipes in the food group vegetables."
-msgstr "Det er ingen oppskrifter i matvaregruppen Grønnsaker."
+msgstr "Det finnes ingen oppskrifter i matvaregruppen Grønnsaker."
 
 #: .\recipes_app\templates\recipes_app\vegetable_list.html:28
 msgid "recipe in the food group vegetables."
-msgstr "oppskrift i matgruppen Grønnsaker."
+msgstr "oppskrift i matvaregruppen Grønnsaker."
 
 #: .\recipes_app\templates\recipes_app\vegetable_list.html:30
 msgid "recipes in the food group vegetables."
-msgstr "oppskrifter i matgruppen Grønnsaker."
+msgstr "oppskrifter i matvaregruppen Grønnsaker."
 
 #: .\templates\base.html:31
 msgid "Home"
@@ -620,7 +620,7 @@ msgstr "Andre"
 
 #: .\templates\base.html:61
 msgid "Conversion Calculator"
-msgstr "Konverteringskalkulator"
+msgstr "Omregningskalkulator"
 
 #: .\templates\base.html:71
 msgid "Search Recipes"
@@ -672,11 +672,11 @@ msgstr "Tilbakestilling av passord fullført."
 
 #: .\templates\registration\password_reset_complete.html:29
 msgid "Your new password has been set. You can log in now on the"
-msgstr "Ditt nye passord er angitt. Du kan logge inn nå på"
+msgstr "Ditt nye passord er angitt. Du kan nå logge inn  på"
 
 #: .\templates\registration\password_reset_complete.html:29
 msgid "log in page."
-msgstr "påloggingssiden."
+msgstr "påloggingsside."
 
 #: .\templates\registration\password_reset_confirm.html:26
 #: .\templates\registration\password_reset_confirm.html:27
@@ -689,7 +689,7 @@ msgstr "Klikk på knappen for å tilbakestille passordet ditt."
 
 #: .\templates\registration\password_reset_confirm.html:41
 msgid "The password reset link was invalid, possibly because it has already been used."
-msgstr "Koblingen for tilbakestilling av passord var ugyldig, muligens fordi den allerede er brukt."
+msgstr "Tilbakestilling av passord var ugyldig, muligens fordi det allerede er brukt."
 
 #: .\templates\registration\password_reset_confirm.html:43
 msgid "Click"
@@ -697,7 +697,7 @@ msgstr "Klikk"
 
 #: .\templates\registration\password_reset_confirm.html:43
 msgid "to resend another reset link"
-msgstr "for å sende en ny tilbakestillingskobling på nytt"
+msgstr "for å få ny passordlenke"
 
 #: .\templates\registration\password_reset_done.html:25
 msgid "Email has been sent, check your inbox."
@@ -709,7 +709,7 @@ msgstr "Vi har sendt deg instruksjonene for å tilbakestille passordet ditt på 
 
 #: .\templates\registration\password_reset_done.html:31
 msgid "If you have not received the email in a few minutes, check you junk/spam folder."
-msgstr "Hvis du ikke har mottatt e-posten på noen minutter, sjekk søppelpost-/søppelpostmappen din."
+msgstr "Hvis du ikke har mottatt e-posten innen et par minutter, sjekk søppelpost-/søppelpostmappen din."
 
 #: .\templates\registration\password_reset_done.html:33
 msgid "or"
@@ -788,19 +788,19 @@ msgstr "Vennligst skriv inn passordet ditt på nytt"
 
 #: .\accounts\forms.py:48
 msgid "Please change your first name if required"
-msgstr "Vennligst endre fornavnet ditt om nødvendig"
+msgstr "Du kan endre fornavnet ditt om ønskelig"
 
 #: .\accounts\forms.py:49
 msgid "Please change your last name if required"
-msgstr "Vennligst endre etternavnet ditt om nødvendig"
+msgstr "Du kan endre etternavnet ditt om ønskelig"
 
 #: .\accounts\forms.py:50
 msgid "Please change email address if required"
-msgstr "Vennligst endre e-postadresse om nødvendig"
+msgstr "Du kan endre e-postadresse om ønskelig"
 
 #: .\accounts\forms.py:60
 msgid "Raw passwords are not stored, so there is no way to see your user password, but you can change the password using the button below"
-msgstr "Rå passord lagres ikke, så det er ingen måte å se brukerpassordet ditt på, men du kan endre passordet ved å bruke knappen nedenfor"
+msgstr "Passord lagres ikke, så vi har ingen mulighet til å se brukerpassordet ditt, men du kan endre passordet ved å bruke knappen nedenfor"
 
 #: .\accounts\forms.py:67
 msgid "Old Password"
@@ -812,7 +812,7 @@ msgstr "Nytt passord"
 
 #: .\accounts\forms.py:69
 msgid "Confirm new password"
-msgstr "Bekrefte nytt passord"
+msgstr "Bekreft nytt passord"
 
 #: .\accounts\forms.py:77
 msgid "Please enter your current password"
@@ -820,11 +820,11 @@ msgstr "Vennligst skriv inn ditt nåværende passord"
 
 #: .\accounts\forms.py:78
 msgid "Please re-enter your new password"
-msgstr "Vennligst skriv inn ditt nye passord på nytt"
+msgstr "Bekreft passord ved å skrive det en gang til"
 
 #: .\accounts\views.py:78
 msgid "You have either entered the wrong credentials or you are not a registered user, please either login or register"
-msgstr "Du har enten skrevet inn feil legitimasjon eller du er ikke en registrert bruker, vennligst logg inn eller registrer deg"
+msgstr "Du har skrevet inn feil legitimasjon eller du er ikke registrert bruker, vennligst logg inn eller registrer deg"
 
 #: .\accounts\models.py:10
 msgid "Users must have an email address"
@@ -845,7 +845,7 @@ msgstr "Brukere må ha et etternavn"
 #: .\recipes_app\forms.py:13
 #: .\recipes_app\forms.py:42
 msgid "Recipe Name"
-msgstr "Navn på oppskriften"
+msgstr "Navn på oppskrift"
 
 #: .\recipes_app\forms.py:14
 #: .\recipes_app\forms.py:43
@@ -887,7 +887,7 @@ msgstr "Oppdater landet her."
 
 #: .\recipes_app\forms.py:64
 msgid "Update the recipe food group here."
-msgstr "Oppdater oppskriftsmatgruppen her."
+msgstr "Oppdater oppskriftsmatvaregruppen her."
 
 #: .\recipes_app\forms.py:65
 msgid "Update the recipe ingredients here."
