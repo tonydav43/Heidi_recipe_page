@@ -33,7 +33,7 @@
             {% endif %}
         </div>
             <img src=" {{ recipe.recipe_image.url }}" class="card-img-top rounded-top" alt="{{ recipe.recipe_image }}">
-        <ul class="list-group list-group-flush">
+        <ul id="card-list" class="list-group list-group-flush">
             <h5 class="card-title">{% trans "Recipe Ingredients:" %}</h5>
             <li class="list-group-item"> {{ recipe.recipe_ingredients|linebreaks }} </li>
             <h5 class="card-title">{% trans "Recipe Instructions:" %}</h5>
@@ -41,10 +41,14 @@
             <h5 class="card-title">{% trans "Recipe Notes:" %}</h5>
             <li class="list-group-item"> {{ recipe.recipe_notes|linebreaks }} </li>
             {% if request.user == recipe.author %}
-                <button type="button" class="btn btn-success my-1"><a  id="btn-update"  href="{% url 'recipes_app:update' recipe.slug %}"{{recipe.recipe.slug}} class="h6-btn">{% trans "Update Recipe" %}</a></button>
-                <button type="button" class="btn btn-danger my-1"><a  id="btn-delete"  href="{% url 'recipes_app:delete' recipe.slug %}" class="h6-btn">{% trans "Delete Recipe" %}</a></button>
+                <button type="button" class="btn btn-success my-1"><a id="btn-update"  href="{% url 'recipes_app:update' recipe.slug %}"{{recipe.recipe.slug}} class="h6-btn">{% trans "Update Recipe" %}</a></button>
+                <button type="button" class="btn btn-danger my-1"><a id="btn-delete"  href="{% url 'recipes_app:delete' recipe.slug %}" class="h6-btn">{% trans "Delete Recipe" %}</a></button>
+                <button type="button" class="btn btn-warning my-1" onClick="window.print()" id="btn-delete" >Print recipe</button>
+            {% else %}
+                <button type="button" class="btn btn-warning my-1" onClick="window.print()" id="btn-delete" >Print recipe</button>
             {% endif %}
         </ul>
     </div>   
 </div>
 {% endblock content %}
+

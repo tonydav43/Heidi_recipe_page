@@ -1,3 +1,21 @@
+@media only print {
+    #card-width {
+      overflow: visible;   
+    }
+ }
+
+ @media only print {
+    nav {
+        display: none !important;
+    }
+ }
+
+@media only print {
+    .base-footer {
+        display: none !important;
+    }
+ }
+
 .div-detail {
     margin-top: 25px;
     margin-bottom: 100px;
@@ -20,12 +38,19 @@
     text-align: left;
 }
 
-#btn-update{ 
+#btn-update { 
     color: black; 
     font-weight: bold;
+    text-decoration: none
 }
 
-#btn-delete{ 
+#btn-delete { 
+    color: black; 
+    font-weight: bold;
+    text-decoration: none
+}
+
+#btn-print {
     color: black; 
     font-weight: bold;
 }

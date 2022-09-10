@@ -26,7 +26,8 @@
 label {
     float: left;
     font-weight: bold;
-    }
+}
+
 .register-error {
     color: red;
 }
