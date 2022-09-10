@@ -1,10 +1,11 @@
 @media only print {
     #card-width {
-      overflow: visible;   
+      overflow: visible;
+      margin: 1mm;  
     }
  }
 
- @media only print {
+@media only print {
     nav {
         display: none !important;
     }
