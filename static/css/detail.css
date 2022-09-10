@@ -1,7 +1,7 @@
 @media only print {
     #card-width {
       overflow: visible;
-      margin: 1mm;  
+      margin: 25mm;
     }
  }
 
@@ -10,6 +10,12 @@
         display: none !important;
     }
  }
+
+@media only print {
+  img {
+    display: none !important;
+    }
+}
 
 @media only print {
     .base-footer {
@@ -27,6 +33,12 @@
 
 #card-width {
     width: 500px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
 }
 
 .scrollable-menu {
